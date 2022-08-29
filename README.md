@@ -46,6 +46,6 @@
 
 <br clear="both">
 
-<img href="https://github.com/emon1432/emon1432/blob/output/snake.svg" alt="Snake animation" />
+![Snake animation](https://github.com/emon1432/emon1432/blob/output/snake.svg)
 
 ###
