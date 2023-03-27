@@ -1,14 +1,14 @@
 ```javascript
-import SoftwareDeveloper from 'emon1432';
+import WebDeveloper from 'emon1432';
 import { Languages, Frameworks } from 'emon1432/skills';
 
-class Bio extends SoftwareDeveloper {
+class Bio extends WebDeveloper {
   name     = 'Khairul Islam Emon';
   title    = 'Senior Web Developer';
   location = 'Dhaka, Bangladesh';
 }
 
-class Skills extends SoftwareDeveloper {
+class Skills extends WebDeveloper {
   languages  = ['JavaScript', 'PHP', ...Languages];
   databases  = ['MySQL', 'MongoDB'];
   frameworks = ['React', 'Laravel', ...Frameworks];
