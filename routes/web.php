@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -11,4 +12,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
     Route::get('/dashboard', function () {
         return view('backend.pages.dashboard.index');
     })->name('dashboard');
+
+    Route::resource('portfolios', PortfolioController::class);
 });

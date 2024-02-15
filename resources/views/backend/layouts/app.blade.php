@@ -15,6 +15,8 @@
     <script src="{{ asset('backend') }}/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="{{ asset('backend') }}/plugins/simplebar/simplebar.min.js"></script>
     <script src="{{ asset('backend') }}/js/config.js"></script>
+    <link href="{{ asset('backend') }}/plugins/choices/choices.min.css" rel="stylesheet" />
+    <link href="{{ asset('backend') }}/plugins/prism/prism-okaidia.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap"
@@ -34,6 +36,7 @@
     <link href="{{ asset('backend') }}/plugins/leaflet/leaflet.css" rel="stylesheet">
     <link href="{{ asset('backend') }}/plugins/leaflet.markercluster/MarkerCluster.css" rel="stylesheet">
     <link href="{{ asset('backend') }}/plugins/leaflet.markercluster/MarkerCluster.Default.css" rel="stylesheet">
+    @stack('styles')
 </head>
 
 <body>
@@ -56,6 +59,8 @@
     <script src="{{ asset('backend') }}/plugins/list.js/list.min.js"></script>
     <script src="{{ asset('backend') }}/plugins/feather-icons/feather.min.js"></script>
     <script src="{{ asset('backend') }}/plugins/dayjs/dayjs.min.js"></script>
+    <script src="{{ asset('backend') }}/plugins/choices/choices.min.js"></script>
+    <script src="{{ asset('backend') }}/plugins/prism/prism.js"></script>
     <script src="{{ asset('backend') }}/js/phoenix.js"></script>
     <script src="{{ asset('backend') }}/plugins/echarts/echarts.min.js"></script>
     <script src="{{ asset('backend') }}/plugins/leaflet/leaflet.js"></script>
@@ -63,6 +68,7 @@
     <script src="{{ asset('backend') }}/plugins/leaflet.tilelayer.colorfilter/leaflet-tilelayer-colorfilter.min.js">
     </script>
     <script src="{{ asset('backend') }}/js/ecommerce-dashboard.js"></script>
+    @stack('scripts')
 </body>
 
 
