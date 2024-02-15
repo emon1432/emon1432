@@ -1,0 +1,9 @@
+@extends('frontend.layouts.app')
+@section('content')
+    @include('frontend.pages.home.sections.home')
+    @include('frontend.pages.home.sections.portfolio')
+    @include('frontend.pages.home.sections.resume')
+    @include('frontend.pages.home.sections.testimonial')
+    @include('frontend.pages.home.sections.blog')
+    @include('frontend.pages.home.sections.contacts')
+@endsection
