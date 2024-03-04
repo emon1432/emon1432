@@ -2,8 +2,8 @@
     <div class="row align-items-center">
         <div class="col-md-12">
             <div class="mobile-logobar">
-                <a href="index.html" class="mobile-logo">
-                    <img src="{{ asset('backend') }}/images/logo.svg" class="img-fluid" alt="logo">
+                <a href="{{ route('dashboard') }}" class="mobile-logo">
+                    <img src="{{ asset('backend') }}/images/logo.png" class="img-fluid" alt="logo">
                 </a>
             </div>
             <div class="mobile-togglebar">

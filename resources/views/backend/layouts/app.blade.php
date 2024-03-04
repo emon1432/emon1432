@@ -4,12 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Orbiter is a bootstrap minimal & clean admin template">
-    <meta name="keywords"
-        content="admin, admin panel, admin template, admin dashboard, responsive, bootstrap 4, ui kits, ecommerce, web app, crm, cms, html, sass support, scss">
-    <meta name="author" content="Themesbox">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Orbiter - Bootstrap Minimal & Clean Admin Template</title>
+    <title>EmonIdeas - @yield('page-title')</title>
     <link rel="shortcut icon" href="{{ asset('backend') }}/images/favicon.ico">
     <link href="{{ asset('backend') }}/plugins/switchery/switchery.min.css" rel="stylesheet">
     <link href="{{ asset('backend') }}/plugins/apexcharts/apexcharts.css" rel="stylesheet">
