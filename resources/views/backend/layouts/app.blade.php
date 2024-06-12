@@ -10,10 +10,12 @@
     <link href="{{ asset('backend') }}/plugins/apexcharts/apexcharts.css" rel="stylesheet">
     <link href="{{ asset('backend') }}/plugins/slick/slick.css" rel="stylesheet">
     <link href="{{ asset('backend') }}/plugins/slick/slick-theme.css" rel="stylesheet">
+    <link href="{{ asset('backend') }}/plugins/iziToast/css/iziToast.css" rel="stylesheet">
     <link href="{{ asset('backend') }}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="{{ asset('backend') }}/css/icons.css" rel="stylesheet" type="text/css">
     <link href="{{ asset('backend') }}/css/flag-icon.min.css" rel="stylesheet" type="text/css">
     <link href="{{ asset('backend') }}/css/style.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="vertical-layout">
@@ -41,8 +43,10 @@
     <script src="{{ asset('backend') }}/plugins/apexcharts/apexcharts.min.js"></script>
     <script src="{{ asset('backend') }}/plugins/apexcharts/irregular-data-series.js"></script>
     <script src="{{ asset('backend') }}/plugins/slick/slick.min.js"></script>
+    <script src="{{ asset('backend') }}/plugins/iziToast/js/iziToast.js"></script>
     <script src="{{ asset('backend') }}/js/custom/custom-dashboard.js"></script>
     <script src="{{ asset('backend') }}/js/core.js"></script>
+    @include('vendor.lara-izitoast.toast')
 </body>
 
 </html>

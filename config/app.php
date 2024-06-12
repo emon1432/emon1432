@@ -159,6 +159,9 @@ return [
         /*
          * Package Service Providers...
          */
+        Orangehill\Iseed\IseedServiceProvider::class,
+        LaraIzitoast\LaraIzitoastServiceProvider::class,
+
 
         /*
          * Application Service Providers...
