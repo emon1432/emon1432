@@ -12,16 +12,25 @@ jobs:
     # Checkout the repository
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
-    # sync files via FTP
+
+    # Install PHP and Composer
+    - name: 🛠️ Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1' # Use the PHP version your project requires
+        extensions: mbstring, json # Add necessary PHP extensions
+        coverage: none
+
+    # Install dependencies
+    - name: 📦 Install dependencies
+      run: composer install --no-dev --optimize-autoloader
+      env:
+        COMPOSER_MEMORY_LIMIT: -1
+
+    # Sync files via FTP
     - name: 📂 Sync files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASS }}
-    - name: 📦 Install dependencies
-      run: composer update
-      env:
-        COMPOSER_MEMORY_LIMIT: -1
-    - name: key generate
-      run: php artisan key:generate
