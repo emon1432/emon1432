@@ -23,3 +23,5 @@ jobs:
       run: composer update
       env:
         COMPOSER_MEMORY_LIMIT: -1
+    - name: key generate
+      run: php artisan key:generate
