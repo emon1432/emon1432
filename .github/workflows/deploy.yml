@@ -19,3 +19,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASS }}
+    - name: 📦 Install dependencies
+      run: composer install --no-dev --optimize-autoloader
+      env:
+        COMPOSER_MEMORY_LIMIT: -1
