@@ -14,8 +14,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
     Route::get('/dashboard', function () {
         return view('backend.pages.dashboard.index');
     })->name('dashboard');
-
-    Route::resource('portfolios', PortfolioController::class);
 });
 
 Route::get('/migrate', function () {
