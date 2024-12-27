@@ -28,8 +28,6 @@ jobs:
         composer install --no-dev --optimize-autoloader
       env:
         COMPOSER_MEMORY_LIMIT: -1
-    - name: key generate
-      run: php artisan key:generate
 
     # Sync files via FTP
     - name: 📂 Sync files via FTP
