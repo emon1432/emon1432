@@ -12,23 +12,7 @@ jobs:
     # Checkout the repository
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
-
-    # Install PHP and Composer
-    - name: 🛠️ Set up PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.2' # Use the PHP version your project requires
-        extensions: pdo, pdo_mysql, mbstring, json, curl, ftp,
-        coverage: none
-
-    # Install dependencies
-    - name: 📦 Install dependencies without lock file
-      run: |
-        rm composer.lock
-        composer install --no-dev --optimize-autoloader
-      env:
-        COMPOSER_MEMORY_LIMIT: -1
-
+      
     # Sync files via FTP
     - name: 📂 Sync files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
