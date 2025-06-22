@@ -4,7 +4,7 @@ import { Languages, Frameworks } from 'emon1432/skills';
 
 class Bio extends WebDeveloper {
   name     = 'Khairul Islam Emon';
-  title    = 'Senior Web Developer';
+  title    = 'Senior Software Engineer';
   location = 'Dhaka, Bangladesh';
 }
 
