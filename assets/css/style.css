@@ -19783,3 +19783,133 @@ body.white-version {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Portfolio details page enhancements */
+.portfolio-details-card {
+    overflow: hidden;
+}
+
+.portfolio-details-meta {
+    align-items: center;
+}
+
+.portfolio-details-meta-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-details-meta-list li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-lightn);
+    font-size: 14px;
+}
+
+.portfolio-details-meta-list li i {
+    color: var(--color-primary);
+    width: 16px;
+    height: 16px;
+}
+
+.portfolio-project-hero {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(33, 36, 40, 0.8), rgba(22, 24, 28, 0.95));
+    padding: 24px;
+}
+
+.portfolio-project-hero p:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-project-stat {
+    height: 100%;
+    padding: 24px;
+    border-radius: 14px;
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-project-stat h4 {
+    color: var(--color-primary);
+    margin-bottom: 6px;
+}
+
+.portfolio-project-stat p {
+    margin-bottom: 0;
+}
+
+.portfolio-details-heading {
+    color: var(--color-white);
+    font-size: 28px;
+}
+
+.portfolio-feature-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.portfolio-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--color-lightn);
+}
+
+.portfolio-feature-list li i {
+    color: var(--color-primary);
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+}
+
+.portfolio-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.portfolio-tech-stack a {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    padding: 8px 16px;
+    color: var(--color-lightn);
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.portfolio-tech-stack a:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.portfolio-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio-details-meta-list {
+        gap: 12px;
+    }
+
+    .portfolio-details-heading {
+        font-size: 24px;
+    }
+
+    .portfolio-project-hero,
+    .portfolio-project-stat {
+        padding: 20px;
+    }
+}
