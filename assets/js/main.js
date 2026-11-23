@@ -26,6 +26,7 @@
             imJs.wowActive();
             imJs.awsActivation();
             imJs.contactForm();
+            imJs.tabActivation();
         },
 
 
@@ -33,35 +34,32 @@
             $('.rwt-dynamic-form').on('submit', function(e) {
                 e.preventDefault();
                 var _self = $(this);
-                var __selector = _self.closest('input,textarea');
-                _self.closest('div').find('input,textarea').removeAttr('style');
                 _self.find('.error-msg').remove();
-                _self.closest('div').find('button[type="submit"]').attr('disabled', 'disabled');
-                var data = $(this).serialize();
-                $.ajax({
-                    url: 'mail.php',
-                    type: "post",
-                    dataType: 'json',
-                    data: data,
-                    success: function(data) {
-                        _self.closest('div').find('button[type="submit"]').removeAttr('disabled');
-                        if (data.code == false) {
-                            _self.closest('div').find('[name="' + data.field + '"]');
-                            _self.find('.btn-primary').after('<div class="error-msg"><p>*' + data.err + '</p></div>');
-                        } else {
-                            $('.error-msg').hide();
-                            $('.form-group').removeClass('focused');
-                            _self.find('.btn-primary').after('<div class="success-msg"><p>' + data.success + '</p></div>');
-                            _self.closest('div').find('input,textarea').val('');
+                _self.find('.success-msg').remove();
 
-                            setTimeout(function() {
-                                $('.success-msg').fadeOut('slow');
-                            }, 5000);
-                        }
-                    }
-                });
+                var name = $('#contact-name').val() ? $('#contact-name').val().trim() : '';
+                var phone = $('#contact-phone').val() ? $('#contact-phone').val().trim() : '';
+                var email = $('#contact-email').val() ? $('#contact-email').val().trim() : '';
+                var subject = $('#subject').val() ? $('#subject').val().trim() : '';
+                var message = $('#contact-message').val() ? $('#contact-message').val().trim() : '';
+
+                if (!name || !email || !message) {
+                    _self.find('.btn-primary').after('<div class="error-msg mt--10"><p style="color: #ff014f;">* Please fill in all required fields.</p></div>');
+                    return;
+                }
+
+                var mailSubject = encodeURIComponent(subject ? subject : 'Portfolio Message from ' + name);
+                var mailBody = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + (phone || 'N/A') + '\n\nMessage:\n' + message);
+
+                _self.find('.btn-primary').after('<div class="success-msg mt--10"><p style="color: #28a745;">✓ Opening your email client to send message...</p></div>');
+
+                window.location.href = 'mailto:e.mon143298@gmail.com?subject=' + mailSubject + '&body=' + mailBody;
+
+                setTimeout(function() {
+                    _self[0].reset();
+                    $('.success-msg').fadeOut('slow');
+                }, 4000);
             });
-
         },
 
 
@@ -71,10 +69,16 @@
 
         smothScroll: function() {
             $(document).on('click', '.smoth-animation', function(event) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - 50
-                }, 300);
+                var targetHref = $(this).attr('href');
+                if (targetHref && targetHref.startsWith('#')) {
+                    var $target = $(targetHref);
+                    if ($target.length) {
+                        event.preventDefault();
+                        $('html, body').stop().animate({
+                            scrollTop: $target.offset().top - 70
+                        }, 400);
+                    }
+                }
             });
         },
 
@@ -159,41 +163,7 @@
             });
 
 
-            $('.blog-slick-activation').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: true,
-                cssEase: 'linear',
-                adaptiveHeight: true,
-                prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
-                responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 868,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            dots: true,
-                            arrows: false,
-                        }
-                    }
-                ]
-            });
+
 
             $('.testimonial-activation-item-3').slick({
                 arrows: true,
@@ -337,48 +307,58 @@
                 $('.popup-mobile-menu').addClass('menu-open');
                 imJs._html.css({
                     overflow: 'hidden'
-                })
+                });
             });
 
-            $('.close-menu-activation, .popup-mobile-menu .primary-menu .nav-item a').on('click', function(e) {
+            $('.close-menu-activation').on('click', function(e) {
                 e.preventDefault();
                 $('.popup-mobile-menu').removeClass('menu-open');
                 $('.has-droupdown > a').removeClass('open').siblings('.submenu').removeClass('active').slideUp('400');
                 imJs._html.css({
                     overflow: ''
-                })
+                });
+            });
+
+            $('.popup-mobile-menu .primary-menu .nav-item a').on('click', function(e) {
+                $('.popup-mobile-menu').removeClass('menu-open');
+                $('.has-droupdown > a').removeClass('open').siblings('.submenu').removeClass('active').slideUp('400');
+                imJs._html.css({
+                    overflow: ''
+                });
             });
 
             $('.popup-mobile-menu').on('click', function(e) {
-                e.target === this && $('.popup-mobile-menu').removeClass('menu-open');
-                imJs._html.css({
-                    overflow: ''
-                })
+                if (e.target === this) {
+                    $('.popup-mobile-menu').removeClass('menu-open');
+                    imJs._html.css({
+                        overflow: ''
+                    });
+                }
             });
-
 
             $('.has-droupdown > a').on('click', function(e) {
                 e.preventDefault();
                 $(this).siblings('.submenu').toggleClass('active').slideToggle('400');
                 $(this).toggleClass('open');
-                imJs._html.css({
-                    overflow: ''
-                })
             });
 
-
             $('.nav-pills .nav-link').on('click', function(e) {
-                $('.rn-popup-mobile-menu').removeClass('menu-open');
+                $('.popup-mobile-menu').removeClass('menu-open');
                 imJs._html.css({
                     overflow: ''
-                })
-            })
-
-
+                });
+            });
         },
 
         awsActivation: function(e) {
             AOS.init();
+        },
+
+        tabActivation: function() {
+            $('#myTabs a[data-toggle="tab"]').on('click', function(e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
         },
 
     }
