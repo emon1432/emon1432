@@ -40,16 +40,19 @@
 
 <br/>
 
-<img
-  width="49%"
-  src="https://github-readme-stats.vercel.app/api?username=emon1432&show_icons=true&hide_rank=false&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
-  alt="GitHub Stats"
-/>
-<img
-  width="49%"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=emon1432&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F"
-  alt="Top Languages"
-/>
+<p align="center">
+  <img
+    height="195"
+    src="https://github-readme-stats.vercel.app/api?username=emon1432&show_icons=true&hide_rank=false&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
+    alt="GitHub Stats"
+  />
+  &nbsp;&nbsp;
+  <img
+    height="195"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=emon1432&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=467"
+    alt="Top Languages"
+  />
+</p>
 
 <br/><br/>
 
