@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://emonideas.com/sitemap.xml

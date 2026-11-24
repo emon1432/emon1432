@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>C-Box Canada | Case Study | Khairul Islam</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Ontario Contemporary Fashion &amp; Lifestyle eCommerce Platform - Production software engineering case study by Khairul Islam (Senior Software Engineer)." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="canonical" href="https://emonideas.com/projects/cbox/" />
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Khairul Islam (Emon) | Senior Software Engineer" />
+    <meta property="og:title" content="C-Box Canada | Case Study | Khairul Islam" />
+    <meta property="og:description" content="Ontario Contemporary Fashion &amp; Lifestyle eCommerce Platform" />
+    <meta property="og:url" content="https://emonideas.com/projects/cbox/" />
+    <meta property="og:image" content="https://emonideas.com/assets/images/portfolio/cbox.jpg" />
+    <meta property="og:image:secure_url" content="https://emonideas.com/assets/images/portfolio/cbox.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="C-Box Canada Preview Showcase" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="C-Box Canada | Case Study | Khairul Islam" />
+    <meta name="twitter:description" content="Ontario Contemporary Fashion &amp; Lifestyle eCommerce Platform" />
+    <meta name="twitter:image" content="https://emonideas.com/assets/images/portfolio/cbox.jpg" />
+    <meta name="twitter:creator" content="@emon1432" />
+
+    <!-- Favicon & PWA -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/images/icons/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/slick.css" />
+    <link rel="stylesheet" href="/assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="/assets/css/aos.css" />
+    <link rel="stylesheet" href="/assets/css/feature.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/devicon.min.css?v=2.16.0" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://emonideas.com/projects/cbox/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://emonideas.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://emonideas.com/portfolio.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "C-Box Canada",
+          "item": "https://emonideas.com/projects/cbox/"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://emonideas.com/projects/cbox/#software",
+      "name": "C-Box Canada",
+      "headline": "Ontario Contemporary Fashion & Lifestyle eCommerce Platform",
+      "description": "C-Box Canada is an Ontario-based retail fashion and lifestyle e-commerce store offering contemporary apparel, footwear, and accessories. Designed for North American shoppers, it delivers intuitive product discovery, color/size variant selection, order tracking, and online PayPal checkout.",
+      "applicationCategory": "E-Commerce & Retail POS",
+      "operatingSystem": "Web, Cloud, Cross-Platform",
+      "author": {
+        "@type": "Person",
+        "name": "Khairul Islam",
+        "alternateName": "Emon",
+        "jobTitle": "Senior Software Engineer",
+        "url": "https://emonideas.com/",
+        "sameAs": [
+          "https://github.com/emon1432",
+          "https://www.linkedin.com/in/khairul-islam-emon",
+          "https://www.facebook.com/emon143298"
+        ]
+      },
+      "url": "https://c-box.ca/",
+      "image": "https://emonideas.com/assets/images/portfolio/cbox.jpg",
+      "keywords": "BILLING & PAYMENT, E-Commerce & Retail POS, Software Engineering"
+    }
+  ]
+}
+    </script>
+
+    <style>
+      .portfolio-details-card .thumbnail {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px #1c1e22, -10px -10px 20px #262a2e;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .portfolio-details-card .thumbnail img {
+        width: 100%;
+        max-height: 520px;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+      }
+      .portfolio-project-stat {
+        background: #1e2024;
+        padding: 24px 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        text-align: center;
+        height: 100%;
+      }
+      .portfolio-project-stat h4 {
+        color: #ff014f;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .portfolio-project-stat p {
+        color: #c4cfde;
+        font-size: 13px;
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+      .portfolio-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px 12px;
+        border-radius: 4px;
+        background: rgba(255, 1, 79, 0.1);
+        border: 1px solid rgba(255, 1, 79, 0.25);
+        color: #ff014f;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .portfolio-badge svg {
+        width: 14px;
+        height: 14px;
+      }
+      .portfolio-cta-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+      }
+      .portfolio-cta-group .rn-btn.primary-live {
+        background: linear-gradient(145deg, #ff014f, #d11448);
+        color: #ffffff !important;
+        box-shadow: 0 4px 15px rgba(255, 1, 79, 0.4);
+        border: none;
+      }
+      .portfolio-cta-group .rn-btn.primary-live:hover {
+        background: linear-gradient(145deg, #d11448, #ff014f);
+        transform: translateY(-2px);
+      }
+      .case-study-section-title {
+        color: #c4cfde;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .case-study-section-title svg {
+        color: #ff014f;
+        width: 20px;
+        height: 20px;
+      }
+      .portfolio-feature-list li {
+        color: #c4cfde;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .portfolio-feature-list li svg {
+        color: #ff014f;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        margin-top: 4px;
+      }
+      .portfolio-text-block {
+        color: #878e99;
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+      .related-project-card .thumbnail {
+        height: 200px;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      .related-project-card .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: transform 0.5s ease;
+      }
+      .related-project-card:hover .thumbnail img {
+        transform: scale(1.05);
+      }
+      .breadcrumb-nav {
+        margin-bottom: 25px;
+      }
+      .breadcrumb {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        gap: 8px;
+        font-size: 14px;
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: "/";
+        color: #7c838e;
+        padding-right: 8px;
+      }
+      .breadcrumb-item a {
+        color: #c4cfde;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .breadcrumb-item a:hover {
+        color: #ff014f;
+      }
+      .breadcrumb-item.active {
+        color: #ff014f;
+        font-weight: 500;
+      }
+      .skip-link {
+        position: absolute;
+        top: -999px;
+        left: 20px;
+        z-index: 999999;
+        background: #ff014f;
+        color: #ffffff !important;
+        padding: 10px 18px;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: top 0.2s ease;
+      }
+      .skip-link:focus {
+        top: 20px;
+        outline: 2px solid #ffffff;
+      }
+    </style>
+  </head>
+
+  <body class="template-color-1" data-spy="scroll" data-offset="70">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
+      <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+        <div class="col-lg-2 col-6">
+          <div class="header-left">
+            <div class="logo">
+              <a href="/">
+                <img src="/assets/images/logo/logo-2.png" alt="Khairul Islam Logo" width="160" height="48" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 col-6">
+          <div class="header-center">
+            <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block" aria-label="Main Navigation">
+              <ul class="primary-menu nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#contacts">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-right">
+              <div class="hamberger-menu d-block d-xl-none">
+                <i id="menuBtn" class="feather-menu humberger-menu" role="button" aria-label="Open Mobile Menu" tabindex="0"></i>
+              </div>
+              <div class="close-menu d-block">
+                <span class="closeTrigger" role="button" aria-label="Close Mobile Menu" tabindex="0">
+                  <i data-feather="x"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup-mobile-menu">
+      <div class="inner">
+        <div class="menu-top">
+          <div class="menu-header">
+            <a class="logo" href="/">
+              <img src="/assets/images/logo/logos-circle.png" alt="Khairul Islam Logo" width="60" height="60" />
+            </a>
+            <div class="close-button">
+              <button class="close-menu-activation close" aria-label="Close Menu">
+                <i data-feather="x"></i>
+              </button>
+            </div>
+          </div>
+          <p class="discription">Hello, I am Khairul Islam (Emon), Senior Software Engineer.</p>
+        </div>
+        <div class="content">
+          <ul class="primary-menu nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#contacts">Contact</a>
+            </li>
+          </ul>
+          <div class="social-share-style-1 mt--40">
+            <span class="title">find me</span>
+            <ul class="social-share d-flex liststyle">
+              <li class="facebook">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/emon143298" aria-label="Facebook Profile">
+                  <i data-feather="facebook"></i>
+                </a>
+              </li>
+              <li class="instagram">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/emu_mon/" aria-label="Instagram Profile">
+                  <i data-feather="instagram"></i>
+                </a>
+              </li>
+              <li class="linkedin">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/khairul-islam-emon" aria-label="LinkedIn Profile">
+                  <i data-feather="linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content" class="main-page-wrapper">
+      <div class="rn-portfolio-area rn-section-gap section-separator">
+        <div class="container">
+          <!-- Visible Breadcrumbs Navigation -->
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item"><a href="/portfolio.html">Portfolio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">C-Box Canada</li>
+            </ol>
+          </nav>
+
+          <!-- Header Area -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="section-title text-center"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="true"
+              >
+                <span class="subtitle">Case Study &bull; E-Commerce &amp; Retail POS</span>
+                <h1 class="title">C-Box Canada</h1>
+                <p class="portfolio-stats-summary">
+                  Ontario Contemporary Fashion &amp; Lifestyle eCommerce Platform
+                </p>
+                <div class="mt--20" id="heroBadgeContainer">
+        <span class="portfolio-badge">
+          <i data-feather="credit-card"></i> BILLING &amp; PAYMENT
+        </span>
+      </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Case Study Content Area -->
+          <div class="row row--25 mt--30">
+            <div class="col-12">
+              <article
+                class="rn-blog portfolio-details-card"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                data-aos-once="true"
+              >
+                <div class="inner">
+                  <!-- Big Showcase Thumbnail -->
+                  <div class="thumbnail">
+                    <picture>
+      <source srcset="/assets/images/portfolio/cbox.webp" type="image/webp" />
+      <img src="/assets/images/portfolio/cbox.jpg" alt="C-Box Canada showcase preview" width="1200" height="630" loading="eager" fetchpriority="high" />
+    </picture>
+                  </div>
+
+                  <div class="content">
+                    <!-- 3 Impact Metric Stats Cards -->
+                    <div class="row row--25 mt--10">
+                      
+        <div class="col-lg-4 col-md-6 col-sm-12 mt--20">
+          <div class="portfolio-project-stat">
+            <h4>CAD &amp; USD</h4>
+            <p>North American Multi-Currency Shopping</p>
+          </div>
+        </div>
+      
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mt--20">
+          <div class="portfolio-project-stat">
+            <h4>PayPal</h4>
+            <p>Integrated International Payment Processing</p>
+          </div>
+        </div>
+      
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mt--20">
+          <div class="portfolio-project-stat">
+            <h4>Multi-Variant</h4>
+            <p>Size, Color &amp; Stock Level Accuracy</p>
+          </div>
+        </div>
+      
+                    </div>
+
+                    <!-- CTA Actions Bar -->
+                    <div class="portfolio-cta-group mt--40 mb--40">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://c-box.ca/"
+                        class="rn-btn primary-live"
+                        aria-label="Visit live website for C-Box Canada"
+                      >
+                        <span>VISIT LIVE WEBSITE</span>
+                        <i data-feather="external-link"></i>
+                      </a>
+                      <a href="/portfolio.html" class="rn-btn" aria-label="Back to all projects">
+                        <span>BACK TO ALL PROJECTS</span>
+                        <i data-feather="grid"></i>
+                      </a>
+                      <a href="/#contacts" class="rn-btn" aria-label="Contact Khairul Islam">
+                        <span>GET IN TOUCH</span>
+                        <i data-feather="mail"></i>
+                      </a>
+                    </div>
+
+                    <!-- Section: Executive Summary -->
+                    <h2 class="case-study-section-title">
+                      <i data-feather="info"></i> Executive Summary &amp; Overview
+                    </h2>
+                    <p class="portfolio-text-block">
+                      C-Box Canada is an Ontario-based retail fashion and lifestyle e-commerce store offering contemporary apparel, footwear, and accessories. Designed for North American shoppers, it delivers intuitive product discovery, color/size variant selection, order tracking, and online PayPal checkout.
+                    </p>
+
+                    <!-- Section: Problem & Challenge -->
+                    <h2 class="case-study-section-title">
+                      <i data-feather="alert-circle"></i> Business Context &amp; Challenge
+                    </h2>
+                    <p class="portfolio-text-block">
+                      Apparel e-commerce demands seamless multi-variant matrix navigation (sizes, colors, stock per combination) and rock-solid payment processing tailored to Canadian and US consumers.
+                    </p>
+
+                    <!-- Section: Engineered Solution -->
+                    <h2 class="case-study-section-title">
+                      <i data-feather="cpu"></i> Engineered Solution &amp; Architecture
+                    </h2>
+                    <p class="portfolio-text-block">
+                      Engineered an e-commerce platform with dynamic SKU variant management, synchronized inventory counts, personalized customer wishlists, and seamless checkout via the PayPal REST SDK.
+                    </p>
+
+                    <!-- Section: Key Functional Modules -->
+                    <h2 class="case-study-section-title mt--40">
+                      <i data-feather="check-square"></i> Core Functional Capabilities
+                    </h2>
+                    <ul class="portfolio-feature-list liststyle">
+                      
+        <li>
+          <i data-feather="check-circle"></i>
+          <span>Interactive product catalog with multi-dimensional variant selection (size, color, fit)</span>
+        </li>
+      
+
+        <li>
+          <i data-feather="check-circle"></i>
+          <span>Integrated PayPal checkout supporting credit cards, debit cards, and PayPal wallets</span>
+        </li>
+      
+
+        <li>
+          <i data-feather="check-circle"></i>
+          <span>Customer wishlist, order history, and real-time shipping package tracking</span>
+        </li>
+      
+
+        <li>
+          <i data-feather="check-circle"></i>
+          <span>Promotional campaign manager with discount voucher codes and flash sales</span>
+        </li>
+      
+
+        <li>
+          <i data-feather="check-circle"></i>
+          <span>Responsive shopping interface optimized for mobile and desktop screens</span>
+        </li>
+      
+
+        <li>
+          <i data-feather="check-circle"></i>
+          <span>Administrative product catalog and order dispatch management system</span>
+        </li>
+      
+                    </ul>
+
+                    <!-- Bottom CTA Banner -->
+                    <div class="portfolio-cta-group mt--50 pt--30" style="border-top: 1px solid rgba(255,255,255,0.08);">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://c-box.ca/"
+                        class="rn-btn primary-live"
+                        aria-label="Open live project for C-Box Canada"
+                      >
+                        <span>OPEN LIVE PROJECT</span>
+                        <i data-feather="arrow-up-right"></i>
+                      </a>
+                      <a href="/portfolio.html" class="rn-btn" aria-label="Explore more projects">
+                        <span>EXPLORE MORE PROJECTS</span>
+                        <i data-feather="arrow-left"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Section: Related Projects -->
+          <div class="row mt--60">
+            <div class="col-lg-12">
+              <div class="section-title text-center" data-aos="fade-up">
+                <span class="subtitle">Explore Further</span>
+                <h3 class="title">Related Portfolio Projects</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row--25 mt--10">
+            
+    <div
+      class="col-lg-4 col-md-6 col-sm-12 mt--30"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-once="true"
+    >
+      <div class="rn-portfolio related-project-card">
+        <div class="inner">
+          <div class="thumbnail">
+            <a href="/projects/asianjewelleryhouse/" aria-label="View case study for Asian Jewellery House">
+              <picture>
+      <source srcset="/assets/images/portfolio/asianjewelleryhouse.webp" type="image/webp" />
+      <img src="/assets/images/portfolio/asianjewelleryhouse.jpg" alt="Asian Jewellery House preview" width="600" height="400" loading="lazy" decoding="async" />
+    </picture>
+            </a>
+          </div>
+          <div class="content">
+            <div class="category-info">
+              <div class="category-list">
+                <a href="/projects/asianjewelleryhouse/">E-Commerce &amp; Retail POS</a>
+              </div>
+            </div>
+            <h4 class="title">
+              <a href="/projects/asianjewelleryhouse/">
+                Asian Jewellery House
+                <i class="feather-arrow-up-right"></i>
+              </a>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div
+      class="col-lg-4 col-md-6 col-sm-12 mt--30"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-once="true"
+    >
+      <div class="rn-portfolio related-project-card">
+        <div class="inner">
+          <div class="thumbnail">
+            <a href="/projects/alifsuper/" aria-label="View case study for Alif Super Shop &amp; Model Pharma">
+              <picture>
+      <source srcset="/assets/images/portfolio/alifsuper.webp" type="image/webp" />
+      <img src="/assets/images/portfolio/alifsuper.jpg" alt="Alif Super Shop &amp; Model Pharma preview" width="600" height="400" loading="lazy" decoding="async" />
+    </picture>
+            </a>
+          </div>
+          <div class="content">
+            <div class="category-info">
+              <div class="category-list">
+                <a href="/projects/alifsuper/">E-Commerce &amp; Retail POS</a>
+              </div>
+            </div>
+            <h4 class="title">
+              <a href="/projects/alifsuper/">
+                Alif Super Shop &amp; Model Pharma
+                <i class="feather-arrow-up-right"></i>
+              </a>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div
+      class="col-lg-4 col-md-6 col-sm-12 mt--30"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-once="true"
+    >
+      <div class="rn-portfolio related-project-card">
+        <div class="inner">
+          <div class="thumbnail">
+            <a href="/projects/henneybearlondon/" aria-label="View case study for Henney Bear Bangladesh">
+              <picture>
+      <source srcset="/assets/images/portfolio/henneybearlondon.webp" type="image/webp" />
+      <img src="/assets/images/portfolio/henneybearlondon.jpg" alt="Henney Bear Bangladesh preview" width="600" height="400" loading="lazy" decoding="async" />
+    </picture>
+            </a>
+          </div>
+          <div class="content">
+            <div class="category-info">
+              <div class="category-list">
+                <a href="/projects/henneybearlondon/">E-Commerce &amp; Retail POS</a>
+              </div>
+            </div>
+            <h4 class="title">
+              <a href="/projects/henneybearlondon/">
+                Henney Bear Bangladesh
+                <i class="feather-arrow-up-right"></i>
+              </a>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      </div>
+
+      <div class="backto-top">
+        <div>
+          <i data-feather="arrow-up"></i>
+        </div>
+      </div>
+    </main>
+
+    <div class="rn-footer-area rn-section-gap section-separator">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-area text-center">
+              <p class="description mt--30">
+                &copy; 2026 Khairul Islam (Emon). Built with clean architecture, high performance &amp; accessibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/modernizer.min.js"></script>
+    <script src="/assets/js/feather.min.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/text-type.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof feather !== "undefined") {
+          feather.replace();
+        }
+      });
+    </script>
+  </body>
+</html>

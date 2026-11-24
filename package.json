@@ -1,0 +1,22 @@
+{
+  "name": "emonideas-portfolio",
+  "version": "2.0.0",
+  "description": "Portfolio and static case study site for Khairul Islam (Emon) - Senior Software Engineer",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js",
+    "clean": "node -e \"const fs = require('fs'); fs.rmSync('projects', { recursive: true, force: true }); fs.rmSync('sitemap.xml', { force: true }); fs.rmSync('robots.txt', { force: true }); fs.rmSync('404.html', { force: true });\"",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "khairul-islam",
+    "laravel",
+    "full-stack",
+    "bangladesh",
+    "dhaka"
+  ],
+  "author": "Khairul Islam (Emon) <e.mon143298@gmail.com> (https://emonideas.com)",
+  "license": "MIT"
+}
