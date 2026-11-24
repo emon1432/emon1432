@@ -10,7 +10,7 @@
   <img alt="Khairul Islam Emon — Senior Software Engineer" src="portrait_dark.svg" width="100%">
 </picture>
 
-<br/>
+<br/><br/>
 
 <a href="https://www.linkedin.com/in/khairul-islam-emon" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
