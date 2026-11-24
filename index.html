@@ -3,33 +3,72 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Khairul Islam | Senior Software Engineer</title>
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="Personal portfolio of Khairul Islam - Senior Software Engineer specializing in Laravel, React, Mobile and Web Application Development."
-    />
-    <meta
-      property="og:title"
-      content="Khairul Islam | Senior Software Engineer"
-    />
-    <meta
-      property="og:description"
-      content="Senior Software Engineer specializing in Laravel, React, Mobile and Web Application Development."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/slider/banner-01T.png" />
-    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <title>Khairul Islam (Emon) | Senior Software Engineer Bangladesh</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Khairul Islam (Emon) is a Senior Software Engineer in Bangladesh &amp; Laravel developer in Dhaka building scalable web apps, enterprise ERPs, and APIs."
+    />
+    <link rel="canonical" href="https://emonideas.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Khairul Islam Portfolio" />
+    <meta property="og:url" content="https://emonideas.com/" />
+    <meta
+      property="og:title"
+      content="Khairul Islam (Emon) | Senior Software Engineer Bangladesh"
+    />
+    <meta
+      property="og:description"
+      content="Khairul Islam (Emon) is a Senior Software Engineer in Bangladesh &amp; Laravel developer in Dhaka building scalable web apps, enterprise ERPs, and APIs."
+    />
+    <meta
+      property="og:image"
+      content="https://emonideas.com/assets/images/slider/banner-01T.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://emonideas.com/assets/images/slider/banner-01T.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Khairul Islam (Emon) - Senior Software Engineer"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://emonideas.com/" />
+    <meta
+      name="twitter:title"
+      content="Khairul Islam (Emon) | Senior Software Engineer Bangladesh"
+    />
+    <meta
+      name="twitter:description"
+      content="Khairul Islam (Emon) is a Senior Software Engineer in Bangladesh &amp; Laravel developer in Dhaka building scalable web apps, enterprise ERPs, and APIs."
+    />
+    <meta
+      name="twitter:image"
+      content="https://emonideas.com/assets/images/slider/banner-01T.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Khairul Islam (Emon) - Senior Software Engineer"
+    />
+
+    <!-- Favicon & PWA -->
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="assets/images/favicon.ico"
     />
-    <!-- PWA -->
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#ff014f" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,6 +79,59 @@
     <meta name="apple-mobile-web-app-title" content="KI Portfolio" />
     <link rel="apple-touch-icon" href="assets/images/icons/icon-192.png" />
 
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://emonideas.com/#person",
+          "name": "Khairul Islam",
+          "alternateName": ["Emon", "Khairul Islam Emon"],
+          "jobTitle": "Senior Software Engineer",
+          "url": "https://emonideas.com/",
+          "image": "https://emonideas.com/assets/images/slider/banner-01T.png",
+          "sameAs": [
+            "https://github.com/emon1432",
+            "https://www.linkedin.com/in/khairul-islam-emon/",
+            "https://www.facebook.com/emon143298",
+            "https://www.instagram.com/emu_mon/",
+            "https://www.stopstalk.com/user/profile/e_mon"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dhaka",
+            "addressCountry": "Bangladesh"
+          },
+          "knowsAbout": [
+            "PHP",
+            "Laravel",
+            "React",
+            "MySQL",
+            "REST APIs",
+            "Microservices",
+            "ERP",
+            "POS",
+            "Database Architecture",
+            "High-Performance Web Applications"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://emonideas.com/#website",
+          "url": "https://emonideas.com/",
+          "name": "Khairul Islam Portfolio",
+          "description": "Senior Software Engineer specializing in Laravel, PHP, React, MySQL, REST APIs, Microservices, ERP, and High-Performance Web Applications in Dhaka, Bangladesh.",
+          "publisher": {
+            "@id": "https://emonideas.com/#person"
+          },
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/slick-theme.css" />
@@ -48,6 +140,22 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/devicon.min.css?v=2.16.0" />
     <style>
+      .skip-link {
+        position: absolute;
+        top: -999px;
+        left: 20px;
+        background: #ff014f;
+        color: #fff;
+        padding: 10px 18px;
+        border-radius: 6px;
+        z-index: 999999;
+        font-weight: 600;
+        text-decoration: none;
+        transition: top 0.2s ease;
+      }
+      .skip-link:focus {
+        top: 20px;
+      }
       .case-study-btn {
         display: inline-flex;
         align-items: center;
@@ -56,6 +164,12 @@
         font-size: 12px;
         font-weight: 500;
         transition: all 0.3s ease;
+      }
+      
+      .testimonial .inner .card-description .title-area .rating svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 1px;
       }
       .case-study-btn:hover {
         color: #ff014f;
@@ -110,6 +224,7 @@
   </head>
 
   <body class="template-color-1" data-spy="scroll" data-offset="70">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header
       class="rn-header haeder-default black-logo-version header--fixed header--sticky"
     >
@@ -120,7 +235,7 @@
           <div class="header-left">
             <div class="logo">
               <a href="index.html">
-                <img src="assets/images/logo/logo-2.png" alt="logo" />
+                <img src="assets/images/logo/logo-2.png" alt="logo" width="150" height="80" />
               </a>
             </div>
           </div>
@@ -178,10 +293,7 @@
         <div class="menu-top">
           <div class="menu-header">
             <a class="logo" href="index.html">
-              <img
-                src="assets/images/logo/logos-circle.png"
-                alt="Personal Portfolio"
-              />
+              <img src="assets/images/logo/logos-circle.png" alt="Personal Portfolio" width="70" height="70" />
             </a>
             <div class="close-button">
               <button class="close-menu-activation close">
@@ -221,7 +333,7 @@
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.facebook.com/emon143298"
+                  href="https://www.facebook.com/emon143298" aria-label="Facebook Profile"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +357,7 @@
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.instagram.com/emu_mon/"
+                  href="https://www.instagram.com/emu_mon/" aria-label="Instagram Profile"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -278,7 +390,7 @@
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/khairul-islam-emon"
+                  href="https://www.linkedin.com/in/khairul-islam-emon" aria-label="LinkedIn Profile"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -306,7 +418,7 @@
       </div>
     </div>
 
-    <main class="main-page-wrapper">
+    <main id="main-content" class="main-page-wrapper">
       <div id="home" class="rn-slider-area">
         <div class="slide slider-style-1">
           <div class="container">
@@ -407,7 +519,7 @@
                             <a
                               target="_blank"
                               rel="noopener noreferrer"
-                              href="https://github.com/emon1432"
+                              href="https://github.com/emon1432" aria-label="GitHub Profile"
                               title="GitHub"
                             >
                               <i data-feather="github"></i>
@@ -417,7 +529,7 @@
                             <a
                               target="_blank"
                               rel="noopener noreferrer"
-                              href="https://www.linkedin.com/in/khairul-islam-emon"
+                              href="https://www.linkedin.com/in/khairul-islam-emon" aria-label="LinkedIn Profile"
                               title="LinkedIn"
                             >
                               <i data-feather="linkedin"></i>
@@ -456,14 +568,23 @@
               <div class="col-lg-5 mt_md--50 mt_sm--50">
                 <div class="thumbnail">
                   <div class="inner">
-                    <img
-                      data-aos="fade-left"
-                      data-aos-duration="500"
-                      data-aos-delay="300"
-                      data-aos-once="true"
-                      src="assets/images/slider/banner-01T.png"
-                      alt="Personal Portfolio Images"
-                    />
+                    <picture>
+                      <source
+                        srcset="assets/images/slider/banner-01T.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        data-aos="fade-left"
+                        data-aos-duration="500"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        src="assets/images/slider/banner-01T.png"
+                        alt="Khairul Islam - Senior Software Engineer"
+                        width="382"
+                        height="654"
+                        fetchpriority="high"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -505,15 +626,9 @@
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a
-                      href="portfolio-details.html?id=cashboxglobal"
-                      title="View CashBox POS Case Study"
-                    >
-                      <img
-                        src="assets/images/portfolio/cashboxglobal.jpg"
-                        alt="CashBox POS preview"
-                        loading="lazy"
-                      />
+                    <a href="/projects/cashboxglobal/" title="View CashBox POS (Ultimate POS & Billing) Case Study" aria-label="View CashBox POS (Ultimate POS & Billing) Case Study">
+
+                      <img src="assets/images/portfolio/cashboxglobal.jpg" alt="CashBox POS preview" width="800" height="500" loading="lazy" decoding="async" />
                     </a>
                   </div>
                   <div class="content">
@@ -541,7 +656,7 @@
                       An all-in-one cloud point-of-sale and retail management platform built for modern retail businesses and multi-store operations with automated inventory tracking and rapid cashier checkouts.
                     </p>
                     <div class="portfolio-card-footer mt--15 d-flex justify-content-between align-items-center">
-                      <a href="portfolio-details.html?id=cashboxglobal" class="case-study-btn">
+                      <a href="/projects/cashboxglobal/" class="case-study-btn" aria-label="View CashBox POS (Ultimate POS & Billing) Case Study">
                         <span>Case Study</span>
                         <i data-feather="arrow-right"></i>
                       </a>
@@ -563,15 +678,9 @@
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a
-                      href="portfolio-details.html?id=jogajogqr"
-                      title="View Jogajog QR Case Study"
-                    >
-                      <img
-                        src="assets/images/portfolio/jogajogqr.jpg"
-                        alt="Jogajog QR preview"
-                        loading="lazy"
-                      />
+                    <a href="/projects/jogajogqr/" title="View Jogajog QR (যোগাযোগ QR) Case Study" aria-label="View Jogajog QR (যোগাযোগ QR) Case Study">
+
+                      <img src="assets/images/portfolio/jogajogqr.jpg" alt="Jogajog QR preview" width="800" height="500" loading="lazy" decoding="async" />
                     </a>
                   </div>
                   <div class="content">
@@ -599,7 +708,7 @@
                       A privacy-first smart communications SaaS platform enabling secure voice calling, direct messaging, and vCard sharing via dynamic QR codes without exposing personal phone numbers.
                     </p>
                     <div class="portfolio-card-footer mt--15 d-flex justify-content-between align-items-center">
-                      <a href="portfolio-details.html?id=jogajogqr" class="case-study-btn">
+                      <a href="/projects/jogajogqr/" class="case-study-btn" aria-label="View Jogajog QR (যোগাযোগ QR) Case Study">
                         <span>Case Study</span>
                         <i data-feather="arrow-right"></i>
                       </a>
@@ -621,15 +730,9 @@
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a
-                      href="portfolio-details.html?id=asianjewelleryhouse"
-                      title="View Asian Jewellery House Case Study"
-                    >
-                      <img
-                        src="assets/images/portfolio/asianjewelleryhouse.jpg"
-                        alt="Asian Jewellery House preview"
-                        loading="lazy"
-                      />
+                    <a href="/projects/asianjewelleryhouse/" title="View Asian Jewellery House Case Study" aria-label="View Asian Jewellery House Case Study">
+
+                      <img src="assets/images/portfolio/asianjewelleryhouse.jpg" alt="Asian Jewellery House preview" width="800" height="500" loading="lazy" decoding="async" />
                     </a>
                   </div>
                   <div class="content">
@@ -657,7 +760,7 @@
                       A dual-system jewelry commerce solution featuring an elegant customer showroom alongside a comprehensive back-office POS and inventory management application with karat-based pricing.
                     </p>
                     <div class="portfolio-card-footer mt--15 d-flex justify-content-between align-items-center">
-                      <a href="portfolio-details.html?id=asianjewelleryhouse" class="case-study-btn">
+                      <a href="/projects/asianjewelleryhouse/" class="case-study-btn" aria-label="View Asian Jewellery House Case Study">
                         <span>Case Study</span>
                         <i data-feather="arrow-right"></i>
                       </a>
@@ -679,15 +782,9 @@
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a
-                      href="portfolio-details.html?id=akhayerintl"
-                      title="View A Khayer International Case Study"
-                    >
-                      <img
-                        src="assets/images/portfolio/akhayerintl.jpg"
-                        alt="A Khayer International preview"
-                        loading="lazy"
-                      />
+                    <a href="/projects/akhayerintl/" title="View A Khayer International (RL 2235) Case Study" aria-label="View A Khayer International (RL 2235) Case Study">
+
+                      <img src="assets/images/portfolio/akhayerintl.jpg" alt="A Khayer International preview" width="800" height="500" loading="lazy" decoding="async" />
                     </a>
                   </div>
                   <div class="content">
@@ -715,7 +812,7 @@
                       A custom internal ERP and accounting management system engineered for a licensed overseas manpower recruitment agency tracking applicant records, agent ledgers, and multi-currency banking.
                     </p>
                     <div class="portfolio-card-footer mt--15 d-flex justify-content-between align-items-center">
-                      <a href="portfolio-details.html?id=akhayerintl" class="case-study-btn">
+                      <a href="/projects/akhayerintl/" class="case-study-btn" aria-label="View A Khayer International (RL 2235) Case Study">
                         <span>Case Study</span>
                         <i data-feather="arrow-right"></i>
                       </a>
@@ -737,15 +834,9 @@
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a
-                      href="portfolio-details.html?id=alifsuper"
-                      title="View Alif Super Shop Case Study"
-                    >
-                      <img
-                        src="assets/images/portfolio/alifsuper.jpg"
-                        alt="Alif Super Shop preview"
-                        loading="lazy"
-                      />
+                    <a href="/projects/alifsuper/" title="View Alif Super Shop & Model Pharma Case Study" aria-label="View Alif Super Shop & Model Pharma Case Study">
+
+                      <img src="assets/images/portfolio/alifsuper.jpg" alt="Alif Super Shop preview" width="800" height="500" loading="lazy" decoding="async" />
                     </a>
                   </div>
                   <div class="content">
@@ -773,7 +864,7 @@
                       An omnichannel retail and pharmacy e-commerce system seamlessly bridging public online shopping with physical counter sales, batch inventory tracking, and printed invoices.
                     </p>
                     <div class="portfolio-card-footer mt--15 d-flex justify-content-between align-items-center">
-                      <a href="portfolio-details.html?id=alifsuper" class="case-study-btn">
+                      <a href="/projects/alifsuper/" class="case-study-btn" aria-label="View Alif Super Shop & Model Pharma Case Study">
                         <span>Case Study</span>
                         <i data-feather="arrow-right"></i>
                       </a>
@@ -795,15 +886,9 @@
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a
-                      href="portfolio-details.html?id=khidmahhospital"
-                      title="View Khidmah Hospital Case Study"
-                    >
-                      <img
-                        src="assets/images/portfolio/khidmahhospital.jpg"
-                        alt="Khidmah Hospital preview"
-                        loading="lazy"
-                      />
+                    <a href="/projects/khidmahhospital/" title="View Khidmah Hospital Dhaka Case Study" aria-label="View Khidmah Hospital Dhaka Case Study">
+
+                      <img src="assets/images/portfolio/khidmahhospital.jpg" alt="Khidmah Hospital preview" width="800" height="500" loading="lazy" decoding="async" />
                     </a>
                   </div>
                   <div class="content">
@@ -831,7 +916,7 @@
                       The official healthcare portal and patient service system for Khidmah Hospital in Dhaka, providing accessible hospital information, doctor appointment booking, and diagnostic price lists.
                     </p>
                     <div class="portfolio-card-footer mt--15 d-flex justify-content-between align-items-center">
-                      <a href="portfolio-details.html?id=khidmahhospital" class="case-study-btn">
+                      <a href="/projects/khidmahhospital/" class="case-study-btn" aria-label="View Khidmah Hospital Dhaka Case Study">
                         <span>Case Study</span>
                         <i data-feather="arrow-right"></i>
                       </a>
@@ -841,8 +926,8 @@
               </div>
             </div>
             <div class="col-lg-12 mt--40 text-center">
-              <a href="portfolio.html" class="rn-btn">
-                <span>SEE MORE</span>
+              <a href="portfolio.html" class="rn-btn" aria-label="View all 36 portfolio projects">
+                <span>View All Projects</span>
                 <i data-feather="arrow-right"></i>
               </a>
             </div>
@@ -860,7 +945,7 @@
                 data-aos-once="true"
                 class="section-title text-center"
               >
-                <span class="subtitle">4+ Years of Experience</span>
+                <span class="subtitle">5+ Years of Experience</span>
                 <h2 class="title">My Resume</h2>
                 <div class="resume-download-btn mt--20">
                   <a
@@ -961,7 +1046,7 @@
                         <div class="progress-wrapper">
                           <div class="content">
                             <span class="subtitle">2019 - Present</span>
-                            <h4 class="maintitle">Professional Experience</h4>
+                            <h3 class="maintitle">Professional Experience</h3>
                             <div class="experience-list">
                               <div class="resume-single-list">
                                 <div class="inner">
@@ -1054,7 +1139,7 @@
                         <div class="progress-wrapper">
                           <div class="content">
                             <span class="subtitle">Best Skill On</span>
-                            <h4 class="maintitle">Development</h4>
+                            <h3 class="maintitle">Development</h3>
                             <div class="tech-icon">
                               <a href="javascript:void(0)" title="PHP"
                                 ><i class="devicon-php-plain"></i>
@@ -1091,7 +1176,7 @@
                             </div>
                           </div>
                           <div class="content mt--40">
-                            <h4 class="maintitle">Design &amp; UI</h4>
+                            <h3 class="maintitle">Design &amp; UI</h3>
                             <div class="tech-icon">
                               <a href="javascript:void(0)" title="HTML5"
                                 ><i class="devicon-html5-plain"></i>
@@ -1108,7 +1193,7 @@
                             </div>
                           </div>
                           <div class="content mt--40">
-                            <h4 class="maintitle">Tools &amp; Workflow</h4>
+                            <h3 class="maintitle">Tools &amp; Workflow</h3>
                             <div class="tech-icon">
                               <a href="javascript:void(0)" title="Git"
                                 ><i class="devicon-git-plain"></i>
@@ -1141,7 +1226,7 @@
                       <div class="col-12">
                         <div class="content">
                           <span class="subtitle">Academic Background</span>
-                          <h4 class="maintitle">Education</h4>
+                          <h3 class="maintitle">Education</h3>
                           <div class="experience-list">
                             <div class="resume-single-list">
                               <div class="inner">
@@ -1255,7 +1340,7 @@
                       <div class="col-12">
                         <div class="content">
                           <span class="subtitle">Non Technical</span>
-                          <h4 class="maintitle">Soft Skills</h4>
+                          <h3 class="maintitle">Soft Skills</h3>
                           <div class="experience-list">
                             <div class="resume-single-list">
                               <div class="inner">
@@ -1294,7 +1379,7 @@
                                 <p class="description">
                                   I am an empathetic person who loves to listen.
                                   I believe in honesty and therefore,
-                                  constructive criticizm is never off the table
+                                  constructive criticism is never off the table
                                   when I indulge myself in any conversation. I
                                   am also an articulate speaker which I believe,
                                   have been honed by my tutoring experience (6
@@ -1375,15 +1460,12 @@
                                   <a
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    href="https://www.stopstalk.com/user/profile/e_mon"
+                                    href="https://www.stopstalk.com/user/profile/e_mon" aria-label="StopStalk Profile"
                                     style="color: #ff014f; font-weight: 500;"
                                     >StopStalk &rarr;</a
                                   >
                                 </p>
-                                    style="color: #ff014f; font-weight: 500"
-                                    >StopStalk &rarr;</a
-                                  >
-                                </p>
+
                               </div>
                             </div>
                           </div>
@@ -1429,10 +1511,7 @@
                   <div class="inner">
                     <div class="card-info">
                       <div class="card-thumbnail">
-                        <img
-                          src="assets/images/testimonial/final-home--1st.png"
-                          alt="Testimonial-image"
-                        />
+                        <img src="assets/images/testimonial/final-home--1st.png" alt="Client Testimonial" width="335" height="252" loading="lazy" decoding="async" />
                       </div>
                       <div class="card-content">
                         <span class="subtitle mt--10"
@@ -1450,27 +1529,12 @@
                           </h3>
                           <span class="date">2021</span>
                         </div>
-                        <div class="rating">
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
+                        <div class="rating" role="img" aria-label="5 out of 5 stars">
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </div>
                       </div>
                       <div class="seperator"></div>
@@ -1487,10 +1551,7 @@
                   <div class="inner">
                     <div class="card-info">
                       <div class="card-thumbnail">
-                        <img
-                          src="assets/images/testimonial/final-home--2nd.png"
-                          alt="Testimonial-image"
-                        />
+                        <img src="assets/images/testimonial/final-home--2nd.png" alt="Client Testimonial" width="335" height="252" loading="lazy" decoding="async" />
                       </div>
                       <div class="card-content">
                         <span class="subtitle mt--10"
@@ -1506,27 +1567,12 @@
                           <h3 class="title">Mobile App Development</h3>
                           <span class="date">2019 - 2021</span>
                         </div>
-                        <div class="rating">
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
+                        <div class="rating" role="img" aria-label="5 out of 5 stars">
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </div>
                       </div>
                       <div class="seperator"></div>
@@ -1542,10 +1588,7 @@
                   <div class="inner">
                     <div class="card-info">
                       <div class="card-thumbnail">
-                        <img
-                          src="assets/images/testimonial/final-home--3rd.png"
-                          alt="Testimonial-image"
-                        />
+                        <img src="assets/images/testimonial/final-home--3rd.png" alt="Client Testimonial" width="335" height="252" loading="lazy" decoding="async" />
                       </div>
                       <div class="card-content">
                         <span class="subtitle mt--10">Scorpio Corporation</span>
@@ -1559,27 +1602,12 @@
                           <h3 class="title">Android App Development</h3>
                           <span class="date">2020</span>
                         </div>
-                        <div class="rating">
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
-                          <img
-                            src="assets/images/icons/rating.png"
-                            alt="rating-image"
-                          />
+                        <div class="rating" role="img" aria-label="5 out of 5 stars">
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                          <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffab1a" stroke="#ffab1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </div>
                       </div>
                       <div class="seperator"></div>
@@ -1625,13 +1653,10 @@
             >
               <div class="contact-about-area">
                 <div class="thumbnail">
-                  <img
-                    src="assets/images/contact/contact1.png"
-                    alt="contact-img"
-                  />
+                  <img src="assets/images/contact/contact1.png" alt="Contact Khairul Islam" width="612" height="408" loading="lazy" decoding="async" />
                 </div>
                 <div class="title-area">
-                  <h4 class="title">Khairul Islam Emon</h4>
+                  <h3 class="title">Khairul Islam Emon</h3>
                   <span>Senior Software Engineer</span>
                 </div>
                 <div class="description">
@@ -1658,7 +1683,7 @@
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/emon1432"
+                      href="https://github.com/emon1432" aria-label="GitHub Profile"
                       title="GitHub"
                     >
                       <i data-feather="github"></i>
@@ -1666,7 +1691,7 @@
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://www.linkedin.com/in/khairul-islam-emon/"
+                      href="https://www.linkedin.com/in/khairul-islam-emon/" aria-label="LinkedIn Profile"
                       title="LinkedIn"
                     >
                       <i data-feather="linkedin"></i>
@@ -1793,15 +1818,15 @@
       </div>
     </div>
 
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/modernizer.min.js"></script>
-    <script src="assets/js/feather.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/text-type.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js" defer></script>
+    <script src="assets/js/modernizer.min.js" defer></script>
+    <script src="assets/js/feather.min.js" defer></script>
+    <script src="assets/js/slick.min.js" defer></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/text-type.js" defer></script>
+    <script src="assets/js/wow.js" defer></script>
+    <script src="assets/js/aos.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 
     <!-- PWA Service Worker -->
     <script>

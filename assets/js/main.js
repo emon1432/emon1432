@@ -64,7 +64,9 @@
 
 
         wowActive: function() {
-            new WOW().init();
+            if (typeof WOW !== 'undefined') {
+                new WOW().init();
+            }
         },
 
         smothScroll: function() {
@@ -95,6 +97,7 @@
         },
 
         testimonialActivation: function() {
+            if (!$.fn.slick) return;
             $('.testimonial-activation').slick({
                 infinite: true,
                 slidesToShow: 1,
@@ -238,7 +241,9 @@
         },
 
         featherAtcivation: function() {
-            feather.replace()
+            if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
         },
 
 
@@ -351,7 +356,9 @@
         },
 
         awsActivation: function(e) {
-            AOS.init();
+            if (typeof AOS !== 'undefined') {
+                AOS.init();
+            }
         },
 
         tabActivation: function() {
