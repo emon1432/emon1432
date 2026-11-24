@@ -1,0 +1,552 @@
+[
+  {
+    "id": "digitalstorebd",
+    "url": "https://digitalstorebd.net/",
+    "title": "Digital Store BD",
+    "category": "ecommerce",
+    "features": "E-Commerce & Digital Retail",
+    "tags": [
+      "E-Commerce",
+      "Online Shopping"
+    ],
+    "screenshot": "assets/images/portfolio/projects/digitalstorebd.jpg",
+    "page_title": "Checking your browser before accessing. Just a moment...",
+    "meta_description": "Buy authentic RO & UV water purifiers, filter cartridges & parts in Bangladesh. Free Dhaka delivery & doorstep installation. Call 01828-232924.",
+    "status": "success"
+  },
+  {
+    "id": "businesszonebd",
+    "url": "https://businesszonebd.com/",
+    "title": "Business Zone BD",
+    "category": "ecommerce",
+    "features": "B2B & Wholesale Marketplace",
+    "tags": [
+      "B2B Platform",
+      "E-Commerce"
+    ],
+    "screenshot": "assets/images/portfolio/projects/businesszonebd.jpg",
+    "page_title": "Digital Store",
+    "meta_description": "At Digital Store, we specialize in offering top-quality water purification products and services. As the largest retailer in Bangladesh, we supply water purifiers and accessories nationwide. Our range includes complete RO (Reverse Osmosis) and UV water purification systems, filter cartridges, and essential water filter parts—everything you need for safe and clean drinking water. Digi...",
+    "status": "success"
+  },
+  {
+    "id": "jogajogqr",
+    "url": "https://jogajogqr.com/",
+    "title": "Jogajog QR",
+    "category": "saas",
+    "features": "Smart QR & Mobile Ecosystem (Android & iOS)",
+    "tags": [
+      "QR Platform",
+      "Mobile App",
+      "Android & iOS"
+    ],
+    "screenshot": "assets/images/portfolio/projects/jogajogqr.jpg",
+    "page_title": "যোগাযোগ QR - স্মার্ট প্রাইভেসি প্ল্যাটফর্ম",
+    "status": "success"
+  },
+  {
+    "id": "alifsuper",
+    "url": "https://alifsuper.com/",
+    "title": "Alif Super Shop",
+    "category": "ecommerce",
+    "features": "Retail E-Commerce with POS & Inventory System",
+    "tags": [
+      "E-Commerce",
+      "POS System",
+      "Inventory"
+    ],
+    "screenshot": "assets/images/portfolio/projects/alifsuper.jpg",
+    "page_title": "Alif Super Shop",
+    "meta_description": "Alif Super Shop & Model Pharma\nMintu Chattar,Hazi Badsha Miya Road, Matuail, Demra, Dhaka-1362.",
+    "status": "success"
+  },
+  {
+    "id": "bdusedautoparts",
+    "url": "https://bdusedautoparts.com/",
+    "title": "BD Used Auto Parts",
+    "category": "ecommerce",
+    "features": "Automotive Marketplace with POS, Inventory & Invoicing",
+    "tags": [
+      "Auto Parts",
+      "POS",
+      "Inventory",
+      "Invoice"
+    ],
+    "screenshot": "assets/images/portfolio/projects/bdusedautoparts.jpg",
+    "page_title": "BD USED AUTO PARTS",
+    "meta_description": "Welcome to BD Junkyard, your one-stop shop for all things auto salvage, recycling, and repairs. Located at 4218 Richmond Highway, Richmond, VA, 23234, we’ve been proudly serving the local community for over 18 years.",
+    "status": "success"
+  },
+  {
+    "id": "asianjewelleryhouse",
+    "url": "https://asianjewelleryhouse.com/",
+    "title": "Asian Jewellery House",
+    "category": "ecommerce",
+    "features": "Luxury Jewellery Store with POS, Billing & Invoicing",
+    "tags": [
+      "Jewellery",
+      "POS & Billing",
+      "Invoice"
+    ],
+    "screenshot": "assets/images/portfolio/projects/asianjewelleryhouse.jpg",
+    "page_title": "Asian Jewellery House",
+    "meta_description": "Best Jewellery in Bangladesh",
+    "status": "success"
+  },
+  {
+    "id": "aquapaints",
+    "url": "https://www.aquapaints.com/",
+    "title": "Aqua Paints",
+    "category": "corporate",
+    "features": "Industrial Paint Manufacturer & Distribution Portal",
+    "tags": [
+      "Manufacturing",
+      "Corporate Portal"
+    ],
+    "screenshot": "assets/images/portfolio/projects/aquapaints.jpg",
+    "page_title": "AQUA PAINTS - দেশের রঙে রাঙাই দেশ",
+    "meta_description": "Aqua Paints - Leading manufacturer of decorative, industrial, marine and specialized coatings in Bangladesh with backward integrated resin synthesis and automated ETP facility.",
+    "status": "success"
+  },
+  {
+    "id": "akhayerintl",
+    "url": "https://akhayerintl.com/",
+    "title": "Akhayer International",
+    "category": "enterprise",
+    "features": "Export-Import Hub with Internal ERP Management System",
+    "tags": [
+      "Export & Import",
+      "Internal ERP",
+      "Management"
+    ],
+    "screenshot": "assets/images/portfolio/projects/akhayerintl.jpg",
+    "page_title": "A Khayer International | Licensed Overseas Manpower Recruitment — RL 2235",
+    "meta_description": "A Khayer International is a BAIRA-member, BMET-licensed overseas recruiting agency (RL No. 2235) in Dhaka, Bangladesh — connecting skilled Bangladeshi workers with approved employers in Saudi Arabia and the Gulf.",
+    "status": "success"
+  },
+  {
+    "id": "xdccian",
+    "url": "https://xdccian.com/",
+    "title": "XDCCian Portal",
+    "category": "fintech",
+    "features": "Alumni Community with Complete Registration & Automated Payment System",
+    "tags": [
+      "Member Portal",
+      "Payment Gateway",
+      "Registration"
+    ],
+    "screenshot": "assets/images/portfolio/projects/xdccian.jpg",
+    "page_title": "Dhaka Commerce College Alumni Association (XDCCIAN)",
+    "meta_description": "Dhaka Commerce College Alumni Association (XDCCIAN)",
+    "status": "success"
+  },
+  {
+    "id": "ssonline",
+    "url": "https://ssonline.co.uk/",
+    "title": "SS Online UK",
+    "category": "ecommerce",
+    "features": "UK-based Online Retail & E-Commerce Store",
+    "tags": [
+      "UK E-Commerce",
+      "Retail Store"
+    ],
+    "screenshot": "assets/images/portfolio/projects/ssonline.jpg",
+    "page_title": "ssonline",
+    "status": "success"
+  },
+  {
+    "id": "ssgiftshop",
+    "url": "https://ssgiftshop.co.uk/",
+    "title": "SS Gift Shop UK",
+    "category": "ecommerce",
+    "features": "Personalized Gift Items E-Commerce (UK)",
+    "tags": [
+      "Gifts E-Commerce",
+      "Custom Orders"
+    ],
+    "screenshot": "assets/images/portfolio/projects/ssgiftshop.jpg",
+    "page_title": "ss gift shop",
+    "meta_description": "SS Gift Shop is an Retail & Ecommerce Platform.",
+    "status": "success"
+  },
+  {
+    "id": "welcoeng",
+    "url": "https://welcoeng.com/",
+    "title": "Welco Engineering",
+    "category": "enterprise",
+    "features": "Industrial Engineering & Power Solutions Corporate Portal",
+    "tags": [
+      "Engineering",
+      "Heavy Industry",
+      "Corporate"
+    ],
+    "screenshot": "assets/images/portfolio/projects/welcoeng.jpg",
+    "page_title": "Welco",
+    "meta_description": "Welco Engineering LTD",
+    "status": "success"
+  },
+  {
+    "id": "henneybearlondon",
+    "url": "https://henneybearlondon.com.bd/",
+    "title": "Henney Bear London (BD)",
+    "category": "ecommerce",
+    "features": "British Designer Fashion Bags & Lifestyle Store",
+    "tags": [
+      "Fashion & Brand",
+      "E-Commerce",
+      "Lifestyle"
+    ],
+    "screenshot": "assets/images/portfolio/projects/henneybearlondon.jpg",
+    "page_title": "Just a moment...",
+    "status": "success"
+  },
+  {
+    "id": "cbox",
+    "url": "https://c-box.ca/",
+    "title": "C-Box Canada",
+    "category": "enterprise",
+    "features": "Canadian Storage, Shipping Container & Modular Logistics",
+    "tags": [
+      "Logistics",
+      "Modular Units",
+      "Canada"
+    ],
+    "screenshot": "assets/images/portfolio/projects/cbox.jpg",
+    "page_title": "C-box",
+    "meta_description": "Best clothing site for canda",
+    "status": "success"
+  },
+  {
+    "id": "aestheticfeaturesltd",
+    "url": "https://aestheticfeaturesltd.co.uk/",
+    "title": "Aesthetic Features Ltd (UK)",
+    "category": "enterprise",
+    "features": "Multi-division Architectural & Interior Portfolio (Multi-site Ecosystem)",
+    "tags": [
+      "Architecture",
+      "Multi-brand",
+      "UK Business"
+    ],
+    "screenshot": "assets/images/portfolio/projects/aestheticfeaturesltd.jpg",
+    "page_title": ".:Aesthetic Trade Features Ltd",
+    "meta_description": "EPNWeb - Coming Soon Template",
+    "status": "success"
+  },
+  {
+    "id": "84eventgroup",
+    "url": "https://84eventgroup.org/",
+    "title": "84 Event Group",
+    "category": "saas",
+    "features": "Event Management, Booking & Participant Coordination Platform",
+    "tags": [
+      "Event Management",
+      "Booking Platform"
+    ],
+    "screenshot": "assets/images/portfolio/projects/84eventgroup.jpg",
+    "page_title": "৮৪ ইভেন্ট গ্রুপ",
+    "status": "success"
+  },
+  {
+    "id": "bangladeship",
+    "url": "https://www.bangladeship.com/",
+    "title": "Bangladeshi IP",
+    "category": "enterprise",
+    "features": "Intellectual Property, Trademark & Patent Legal Consultancy",
+    "tags": [
+      "IP Law",
+      "Trademarks & Patents",
+      "Legal Portal"
+    ],
+    "screenshot": "assets/images/portfolio/projects/bangladeship.jpg",
+    "page_title": "bangladeship | Trademarks in Bangladesh",
+    "meta_description": "bangladeship files and defends trademarks in Bangladesh for brands",
+    "status": "success"
+  },
+  {
+    "id": "btc",
+    "url": "https://btc.com.bd/",
+    "title": "Bangladesh Travel Center (BTC)",
+    "category": "corporate",
+    "features": "Travel Booking, Tour Packages & Visa Processing Hub",
+    "tags": [
+      "Travel & Tourism",
+      "Visa Consultancy"
+    ],
+    "screenshot": "assets/images/portfolio/projects/btc.jpg",
+    "page_title": "Biswas Trading and Construction",
+    "status": "success"
+  },
+  {
+    "id": "dailyasianmirror",
+    "url": "https://dailyasianmirror.com/",
+    "title": "Daily Asian Mirror",
+    "category": "corporate",
+    "features": "Online News Portal & High-traffic Digital Media Platform",
+    "tags": [
+      "News Portal",
+      "Media & Publishing"
+    ],
+    "screenshot": "assets/images/portfolio/projects/dailyasianmirror.jpg",
+    "page_title": ":: Asian Mirror ::",
+    "status": "success"
+  },
+  {
+    "id": "danagrpbd",
+    "url": "https://www.danagrpbd.com/",
+    "title": "Dana Group BD",
+    "category": "enterprise",
+    "features": "Multi-disciplinary Industrial Conglomerate Corporate Portal",
+    "tags": [
+      "Conglomerate",
+      "Manufacturing",
+      "Corporate"
+    ],
+    "screenshot": "assets/images/portfolio/projects/danagrpbd.jpg",
+    "page_title": "Dana Group | Building Bangladesh Since 1967",
+    "meta_description": "Dana Group is a diversified industrial conglomerate in Bangladesh with over 5 decades of excellence in engineering, power generation, energy, and infrastructure development.",
+    "status": "success"
+  },
+  {
+    "id": "fcftagro",
+    "url": "https://fcftagro.com/",
+    "title": "FCFT Agro",
+    "category": "corporate",
+    "features": "Agro-industrial Farming & Organic Food Supply Chain",
+    "tags": [
+      "Agro Industry",
+      "Supply Chain",
+      "Organic"
+    ],
+    "screenshot": "assets/images/portfolio/projects/fcftagro.jpg",
+    "page_title": "FCFT Agro |",
+    "meta_description": "Male_Fashion Template",
+    "status": "success"
+  },
+  {
+    "id": "heavenslight",
+    "url": "https://heavenslight.com.bd/",
+    "title": "Heaven's Light BD",
+    "category": "corporate",
+    "features": "Interior Lighting, Electrical Solutions & Corporate Showcase",
+    "tags": [
+      "Lighting Solutions",
+      "Interior Design"
+    ],
+    "screenshot": "assets/images/portfolio/projects/heavenslight.jpg",
+    "page_title": "Heavens Light",
+    "status": "success"
+  },
+  {
+    "id": "khidmahhospital",
+    "url": "https://khidmahhospital.com/",
+    "title": "Khidmah Hospital Dhaka",
+    "category": "corporate",
+    "features": "Specialized Healthcare Services, Doctor Appointments & Patient Portal",
+    "tags": [
+      "Healthcare",
+      "Hospital & Clinical",
+      "Doctor Appointments"
+    ],
+    "screenshot": "assets/images/portfolio/projects/khidmahhospital.jpg",
+    "page_title": "Khidmah Hospital",
+    "meta_description": "Khidmah Hospital (Pvt) Ltd. is a leading private hospital at Khilgaon, Dhaka, Bangladesh. . . .",
+    "status": "success"
+  },
+  {
+    "id": "nabarupa",
+    "url": "https://nabarupa.com/",
+    "title": "Nabarupa Lifestyle",
+    "category": "ecommerce",
+    "features": "Heritage Ethnic Fashion & Handloom E-Commerce Store",
+    "tags": [
+      "Fashion & Clothing",
+      "E-Commerce",
+      "Handloom"
+    ],
+    "screenshot": "assets/images/portfolio/projects/nabarupa.jpg",
+    "page_title": "Nabarupa",
+    "status": "success"
+  },
+  {
+    "id": "neoventisgrp",
+    "url": "https://neoventisgrp.com/",
+    "title": "Neoventis Group",
+    "category": "enterprise",
+    "features": "Diversified Corporate Group Managing Multiple Subsidiary Concerns",
+    "tags": [
+      "Corporate Group",
+      "Multi-Concern",
+      "Enterprise"
+    ],
+    "screenshot": "assets/images/portfolio/projects/neoventisgrp.jpg",
+    "page_title": "Neoventis group",
+    "status": "success"
+  },
+  {
+    "id": "peoplesceramic",
+    "url": "https://peoplesceramic.com/",
+    "title": "Peoples Ceramic Industries",
+    "category": "enterprise",
+    "features": "Premier Ceramic Tableware Manufacturing & Export Corporate Portal",
+    "tags": [
+      "Ceramics Industry",
+      "Export Manufacturing"
+    ],
+    "screenshot": "assets/images/portfolio/projects/peoplesceramic.jpg",
+    "page_title": "Peoples Ceramic",
+    "meta_description": "meta description",
+    "status": "success"
+  },
+  {
+    "id": "shebaholdings",
+    "url": "https://shebaholdings.com/",
+    "title": "Sheba Holdings",
+    "category": "enterprise",
+    "features": "Strategic Investment & Multi-venture Corporate Enterprise",
+    "tags": [
+      "Enterprise",
+      "Holding Company",
+      "Investments"
+    ],
+    "screenshot": "assets/images/portfolio/projects/shebaholdings.jpg",
+    "page_title": "Checking your browser before accessing. Just a moment...",
+    "meta_description": "Sheba Holdings is Bangladesh's premier holding company, developing premium residential real estate and luxurious commercial spaces in prime locations.",
+    "status": "success"
+  },
+  {
+    "id": "softtechsolutions",
+    "url": "https://softtechsolutions.net/",
+    "title": "SoftTech Solutions",
+    "category": "saas",
+    "features": "IT Consulting, Custom Software & Cloud Infrastructure Services",
+    "tags": [
+      "IT Services",
+      "Software Development",
+      "Cloud Solutions"
+    ],
+    "screenshot": "assets/images/portfolio/projects/softtechsolutions.jpg",
+    "page_title": "Softtech Solution",
+    "status": "success"
+  },
+  {
+    "id": "summerfield",
+    "url": "https://summerfield.edu.bd/",
+    "title": "Summerfield International School",
+    "category": "corporate",
+    "features": "British Curriculum School Portal, Academic Admissions & Notices",
+    "tags": [
+      "Education",
+      "International School",
+      "Academics"
+    ],
+    "screenshot": "assets/images/portfolio/projects/summerfield.jpg",
+    "page_title": ":: Summerfield International School ::",
+    "status": "success"
+  },
+  {
+    "id": "cashboxglobal",
+    "url": "https://cashboxglobal.com/",
+    "title": "Cashbox Global",
+    "category": "fintech",
+    "features": "Ultimate Cloud POS, Multi-store Inventory, Billing & Analytical Dashboard",
+    "tags": [
+      "FinTech",
+      "Cloud POS",
+      "Multi-store Billing"
+    ],
+    "screenshot": "assets/images/portfolio/projects/cashboxglobal.jpg",
+    "page_title": "CashBox POS | Smart POS. Smarter Business.",
+    "status": "success"
+  },
+  {
+    "id": "freeworldimports",
+    "url": "https://freeworldimports.com/",
+    "title": "Free World Imports",
+    "category": "corporate",
+    "features": "International Commodities Brokerage & Global Trade Import-Export",
+    "tags": [
+      "Global Trade",
+      "Commodities Brokerage"
+    ],
+    "screenshot": "assets/images/portfolio/projects/freeworldimports.jpg",
+    "page_title": "FreeWorldImports - The Liquidity Services Marketplace",
+    "meta_description": "Freeworld Imports - The Unconventional Liquidity Services Marketplace",
+    "status": "success"
+  },
+  {
+    "id": "yourtreasureseeker",
+    "url": "https://www.yourtreasureseeker.com/",
+    "title": "Your Treasure Seeker",
+    "category": "saas",
+    "features": "Global Lost & Found Community Discovery & Item Recovery Network",
+    "tags": [
+      "Lost & Found",
+      "SaaS Platform",
+      "Community Recovery"
+    ],
+    "screenshot": "assets/images/portfolio/projects/yourtreasureseeker.jpg",
+    "page_title": "Your Treasure Seeker | Find Lost Jewelry, Rings & More!",
+    "meta_description": "Your Treasure Seeker Metal Detecting Services help you find lost jewelry, rings, keys, watches, and more.  Rent or hire our experts to recover your valuables today. Contact us now for prompt assistance!",
+    "status": "success"
+  },
+  {
+    "id": "epaymaker",
+    "url": "https://epaymaker.com/",
+    "title": "Epaymaker",
+    "category": "fintech",
+    "features": "Digital Payment Processing, Merchant Checkout & Invoicing Solution",
+    "tags": [
+      "Payment Gateway",
+      "FinTech",
+      "Merchant Checkout"
+    ],
+    "screenshot": "assets/images/portfolio/projects/epaymaker.jpg",
+    "page_title": "ePayMaker || Payment",
+    "status": "success"
+  },
+  {
+    "id": "sasapplication",
+    "url": "https://sasapplication.com/",
+    "title": "SAS Application",
+    "category": "saas",
+    "features": "Web Application Architecture & Custom Business Workflow Automation",
+    "tags": [
+      "Workflow Automation",
+      "Custom Web App"
+    ],
+    "screenshot": "assets/images/portfolio/projects/sasapplication.jpg",
+    "page_title": "SasApplication",
+    "status": "success"
+  },
+  {
+    "id": "njahanlaw",
+    "url": "https://njahanlaw.ca/",
+    "title": "N Jahan Law (Canada)",
+    "category": "corporate",
+    "features": "Canadian Immigration, Real Estate & Corporate Law Practice Firm",
+    "tags": [
+      "Law Firm",
+      "Canadian Immigration",
+      "Legal Services"
+    ],
+    "screenshot": "assets/images/portfolio/projects/njahanlaw.jpg",
+    "page_title": "N. JAHAN LPC",
+    "status": "success"
+  },
+  {
+    "id": "youthins",
+    "url": "https://www.youthins.com/",
+    "title": "Youth Insurance",
+    "category": "fintech",
+    "features": "Modern Insurance Tech, Policy Comparison & Digital Quotation Portal",
+    "tags": [
+      "InsurTech",
+      "Policy Comparison",
+      "FinTech"
+    ],
+    "screenshot": "assets/images/portfolio/projects/youthins.jpg",
+    "page_title": "YouthINS",
+    "meta_description": "Education Platform",
+    "status": "success"
+  }
+]

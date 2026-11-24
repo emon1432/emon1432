@@ -47,6 +47,49 @@
     <link rel="stylesheet" href="assets/css/feature.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/devicon.min.css?v=2.16.0" />
+    <style>
+      .portfolio-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 10px;
+        border-radius: 4px;
+        background: rgba(255, 1, 79, 0.1);
+        border: 1px solid rgba(255, 1, 79, 0.25);
+        color: #ff014f;
+        margin-top: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .portfolio-badge svg {
+        width: 13px;
+        height: 13px;
+      }
+      .portfolio-desc-text {
+        color: #878e99;
+        font-size: 13px;
+        line-height: 1.6;
+        margin-top: 12px;
+        margin-bottom: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .rn-portfolio .thumbnail img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 10px;
+        transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .rn-portfolio:hover .thumbnail img {
+        transform: scale(1.05);
+      }
+    </style>
   </head>
 
   <body class="template-color-1" data-spy="scroll" data-offset="70">
@@ -434,7 +477,7 @@
           </div>
 
           <div class="row row--25 mt--30 mt_md--10 mt_sm--10">
-            <!-- Project 1: Cashbox Global -->
+                        <!-- Featured 1: CashBox POS -->
             <div
               data-aos="fade-up"
               data-aos-duration="500"
@@ -448,11 +491,12 @@
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://cashboxglobal.com"
+                      href="https://cashboxglobal.com/"
                     >
                       <img
-                        src="assets/images/portfolio/b.jpg"
-                        alt="Cashbox Global - Point of Sales"
+                        src="assets/images/portfolio/cashboxglobal.jpg"
+                        alt="CashBox POS preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
@@ -462,29 +506,84 @@
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          href="https://cashboxglobal.com"
-                          >Laravel &amp; React</a
+                          href="https://cashboxglobal.com/"
+                          >SaaS &amp; Smart Apps</a
                         >
-                      </div>
-                      <div class="meta">
-                        <span>Web &amp; POS App</span>
                       </div>
                     </div>
                     <h4 class="title">
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://cashboxglobal.com"
+                        href="https://cashboxglobal.com/"
                       >
-                        Cashbox Global — Point of Sales
+                        CashBox POS (Ultimate POS &amp; Billing)
                         <i class="feather-arrow-up-right"></i>
                       </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      An all-in-one cloud point-of-sale and retail management platform built for modern retail businesses and multi-store operations with automated inventory tracking and rapid cashier checkouts.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Project 2: BKPBD -->
+
+            <!-- Featured 2: Jogajog QR -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="200"
+              data-aos-once="true"
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://jogajogqr.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/jogajogqr.jpg"
+                        alt="Jogajog QR preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://jogajogqr.com/"
+                          >SaaS &amp; Smart Apps</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://jogajogqr.com/"
+                      >
+                        Jogajog QR (যোগাযোগ QR)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A privacy-first smart communications SaaS platform enabling secure voice calling, direct messaging, and vCard sharing via dynamic QR codes without exposing personal phone numbers.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="smartphone"></i> MULTI MOBILE APP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured 3: Asian Jewellery House -->
             <div
               data-aos="fade-up"
               data-aos-duration="500"
@@ -498,11 +597,12 @@
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://bkpbd.com"
+                      href="https://asianjewelleryhouse.com/"
                     >
                       <img
-                        src="assets/images/portfolio/b2-01.jpg"
-                        alt="BKPBD ERP & HRM"
+                        src="assets/images/portfolio/asianjewelleryhouse.jpg"
+                        alt="Asian Jewellery House preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
@@ -512,79 +612,31 @@
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          href="https://bkpbd.com"
-                          >Enterprise ERP &amp; HRM</a
+                          href="https://asianjewelleryhouse.com/"
+                          >E-Commerce &amp; Retail POS</a
                         >
-                      </div>
-                      <div class="meta">
-                        <span>PHP &amp; Laravel</span>
                       </div>
                     </div>
                     <h4 class="title">
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://bkpbd.com"
+                        href="https://asianjewelleryhouse.com/"
                       >
-                        BKPBD — Garments ERP &amp; HRM
+                        Asian Jewellery House
                         <i class="feather-arrow-up-right"></i>
                       </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      A dual-system jewelry commerce solution featuring an elegant customer showroom alongside a comprehensive back-office POS and inventory management application with karat-based pricing.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Project 3: Free World Imports -->
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay="500"
-              data-aos-once="true"
-              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
-            >
-              <div class="rn-portfolio">
-                <div class="inner">
-                  <div class="thumbnail">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://freeworldimports.com"
-                    >
-                      <img
-                        src="assets/images/portfolio/b3-01.jpg"
-                        alt="Free World Imports"
-                      />
-                    </a>
-                  </div>
-                  <div class="content">
-                    <div class="category-info">
-                      <div class="category-list">
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href="https://freeworldimports.com"
-                          >Auction Marketplace</a
-                        >
-                      </div>
-                      <div class="meta">
-                        <span>B2B Platform</span>
-                      </div>
-                    </div>
-                    <h4 class="title">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://freeworldimports.com"
-                      >
-                        Free World Imports — Auction
-                        <i class="feather-arrow-up-right"></i>
-                      </a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Project 4: Treasure Seeker -->
+
+            <!-- Featured 4: A Khayer International -->
             <div
               data-aos="fade-up"
               data-aos-duration="500"
@@ -598,11 +650,12 @@
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://yourtreasureseeker.com"
+                      href="https://akhayerintl.com/"
                     >
                       <img
-                        src="assets/images/portfolio/SUFI-01.jpg"
-                        alt="Treasure Seeker E-Commerce"
+                        src="assets/images/portfolio/akhayerintl.jpg"
+                        alt="A Khayer International preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
@@ -612,29 +665,84 @@
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          href="https://yourtreasureseeker.com"
-                          >E-Commerce</a
+                          href="https://akhayerintl.com/"
+                          >Enterprise ERP &amp; Systems</a
                         >
-                      </div>
-                      <div class="meta">
-                        <span>Laravel &amp; MySQL</span>
                       </div>
                     </div>
                     <h4 class="title">
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://yourtreasureseeker.com"
+                        href="https://akhayerintl.com/"
                       >
-                        Treasure Seeker — Multi-Vendor
+                        A Khayer International (RL 2235)
                         <i class="feather-arrow-up-right"></i>
                       </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      A custom internal ERP and accounting management system engineered for a licensed overseas manpower recruitment agency tracking applicant records, agent ledgers, and multi-currency banking.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="layers"></i> INTERNAL ERP</span>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Project 5: Sheba Holdings -->
+
+            <!-- Featured 5: Alif Super Shop -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="200"
+              data-aos-once="true"
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://alifsuper.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/alifsuper.jpg"
+                        alt="Alif Super Shop preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://alifsuper.com/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://alifsuper.com/"
+                      >
+                        Alif Super Shop &amp; Model Pharma
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An omnichannel retail and pharmacy e-commerce system seamlessly bridging public online shopping with physical counter sales, batch inventory tracking, and printed invoices.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured 6: Khidmah Hospital -->
             <div
               data-aos="fade-up"
               data-aos-duration="500"
@@ -648,11 +756,12 @@
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://shebaholdings.com"
+                      href="https://khidmahhospital.com/"
                     >
                       <img
-                        src="assets/images/portfolio/b5-01.jpg"
-                        alt="Sheba Holdings"
+                        src="assets/images/portfolio/khidmahhospital.jpg"
+                        alt="Khidmah Hospital preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
@@ -662,74 +771,24 @@
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          href="https://shebaholdings.com"
-                          >Real Estate Solution</a
+                          href="https://khidmahhospital.com/"
+                          >Corporate &amp; Healthcare</a
                         >
-                      </div>
-                      <div class="meta">
-                        <span>Web Platform</span>
                       </div>
                     </div>
                     <h4 class="title">
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://shebaholdings.com"
-                        >Sheba Holdings — Real Estate<i
-                          class="feather-arrow-up-right"
-                        ></i
-                      ></a>
+                        href="https://khidmahhospital.com/"
+                      >
+                        Khidmah Hospital Dhaka
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
                     </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Project 6: JudgeArena -->
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay="500"
-              data-aos-once="true"
-              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
-            >
-              <div class="rn-portfolio">
-                <div class="inner">
-                  <div class="thumbnail">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://github.com/emon1432/JudgeArena"
-                    >
-                      <img
-                        src="assets/images/portfolio/portfolio-06.jpg"
-                        alt="JudgeArena Online Judge"
-                      />
-                    </a>
-                  </div>
-                  <div class="content">
-                    <div class="category-info">
-                      <div class="category-list">
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href="https://github.com/emon1432/JudgeArena"
-                          >Competitive Programming</a
-                        >
-                      </div>
-                      <div class="meta">
-                        <span>PHP &amp; Architecture</span>
-                      </div>
-                    </div>
-                    <h4 class="title">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/emon1432/JudgeArena"
-                        >JudgeArena — Online Judge<i
-                          class="feather-arrow-up-right"
-                        ></i
-                      ></a>
-                    </h4>
+                    <p class="portfolio-desc-text">
+                      The official healthcare portal and patient service system for Khidmah Hospital in Dhaka, providing accessible hospital information, doctor appointment booking, and diagnostic price lists.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1678,16 +1737,8 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="footer-area text-center">
-              <div class="logo">
-                <a href="index.html">
-                  <img
-                    src="assets/images/logo/logo-2.png"
-                    alt="Khairul Islam Logo"
-                  />
-                </a>
-              </div>
-              <p class="description mt--20" style="color: #878e99">
-                &copy; 2026 Khairul Islam Emon. All rights reserved.
+              <p class="description mt--30">
+                The beginning is the end. And the end is the beginning.
               </p>
             </div>
           </div>

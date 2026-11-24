@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Portfolio | Khairul Islam</title>
+    <title>Portfolio | Khairul Islam - Production Builds &amp; Enterprise Solutions</title>
     <meta name="robots" content="index, follow" />
     <meta
       name="description"
-      content="Explore mobile and web projects by Khairul Islam."
+      content="Explore full-stack, enterprise ERP, POS, mobile and web projects by Khairul Islam."
     />
     <meta
       name="viewport"
@@ -24,6 +24,108 @@
     <link rel="stylesheet" href="assets/css/aos.css" />
     <link rel="stylesheet" href="assets/css/feature.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .portfolio-filter-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        list-style: none;
+        padding: 0;
+        margin: 40px 0 10px;
+      }
+      .portfolio-filter-btn {
+        background: #1e2024;
+        color: #c4cfde;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        border-radius: 8px;
+        padding: 10px 22px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        outline: none;
+      }
+      .portfolio-filter-btn:hover,
+      .portfolio-filter-btn.active {
+        color: #ff014f;
+        background: #212428;
+        box-shadow: inset 5px 5px 10px #191b1e, inset -5px -5px 10px #292d32;
+        border-color: rgba(255, 1, 79, 0.4);
+      }
+      .portfolio-filter-btn .count-badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.08);
+        color: #878e99;
+        font-size: 11px;
+        padding: 1px 7px;
+        border-radius: 10px;
+        margin-left: 6px;
+        transition: all 0.3s ease;
+      }
+      .portfolio-filter-btn.active .count-badge,
+      .portfolio-filter-btn:hover .count-badge {
+        background: rgba(255, 1, 79, 0.2);
+        color: #ff014f;
+      }
+      .portfolio-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 10px;
+        border-radius: 4px;
+        background: rgba(255, 1, 79, 0.1);
+        border: 1px solid rgba(255, 1, 79, 0.25);
+        color: #ff014f;
+        margin-top: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .portfolio-badge svg {
+        width: 13px;
+        height: 13px;
+      }
+      .portfolio-item {
+        transition: opacity 0.35s ease, transform 0.35s ease;
+      }
+      .portfolio-item.is-hidden {
+        display: none !important;
+      }
+      .rn-portfolio .thumbnail {
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .rn-portfolio .thumbnail img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 10px;
+        transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .rn-portfolio:hover .thumbnail img {
+        transform: scale(1.05);
+      }
+      .portfolio-desc-text {
+        color: #878e99;
+        font-size: 13px;
+        line-height: 1.6;
+        margin-top: 12px;
+        margin-bottom: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .portfolio-stats-summary {
+        margin-top: 15px;
+        color: #7c838e;
+        font-size: 14px;
+      }
+    </style>
   </head>
 
   <body class="template-color-1" data-spy="scroll" data-offset="70">
@@ -53,9 +155,7 @@
                   <a class="nav-link" href="index.html#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html#portfolio"
-                    >Portfolio</a
-                  >
+                  <a class="nav-link active" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="index.html#resume">Resume</a>
@@ -110,9 +210,7 @@
               <a class="nav-link" href="index.html#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="index.html#portfolio"
-                >Portfolio</a
-              >
+              <a class="nav-link active" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html#resume">Resume</a>
@@ -129,12 +227,20 @@
             <span class="title">find me</span>
             <ul class="social-share d-flex liststyle">
               <li class="facebook">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/e.mon14321">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/e.mon14321"
+                >
                   <i data-feather="facebook"></i>
                 </a>
               </li>
               <li class="instagram">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/emu_mon/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/emu_mon/"
+                >
                   <i data-feather="instagram"></i>
                 </a>
               </li>
@@ -164,8 +270,16 @@
                 data-aos-duration="500"
                 data-aos-once="true"
               >
-                <span class="subtitle">Selected work and real product builds</span>
+                <span class="subtitle"
+                  >Production Builds, Internal Systems &amp; Real-World
+                  Products</span
+                >
                 <h2 class="title">All Portfolio Projects</h2>
+                <p class="portfolio-stats-summary">
+                  Featuring <strong>36 Production Projects</strong> across
+                  E-Commerce with POS/Inventory, Enterprise ERPs, FinTech, and
+                  Scalable Cloud Architectures.
+                </p>
                 <div class="mt--30">
                   <a href="index.html#portfolio" class="rn-btn">
                     <span>BACK TO HOME</span>
@@ -173,224 +287,1962 @@
                   </a>
                 </div>
               </div>
+
+              <!-- Interactive Category Filter Navigation -->
+              <ul
+                class="portfolio-filter-nav"
+                id="portfolioFilterNav"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+              >
+                <li>
+                  <button class="portfolio-filter-btn active" data-filter="all">
+                    All <span class="count-badge" id="count-all">36</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="portfolio-filter-btn" data-filter="ecommerce">
+                    E-Commerce &amp; POS
+                    <span class="count-badge" id="count-ecommerce">0</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="portfolio-filter-btn" data-filter="fintech">
+                    FinTech &amp; Billing
+                    <span class="count-badge" id="count-fintech">0</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="portfolio-filter-btn" data-filter="enterprise">
+                    Enterprise ERP &amp; Systems
+                    <span class="count-badge" id="count-enterprise">0</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="portfolio-filter-btn" data-filter="saas">
+                    SaaS &amp; Smart Apps
+                    <span class="count-badge" id="count-saas">0</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="portfolio-filter-btn" data-filter="corporate">
+                    Corporate &amp; Healthcare
+                    <span class="count-badge" id="count-corporate">0</span>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="row row--25 mt--30 mt_md--10 mt_sm--10">
+          <!-- Project Cards Grid -->
+          <div
+            class="row row--25 mt--30 mt_md--10 mt_sm--10"
+            id="portfolioGrid"
+          >
+            <!-- Project: CashBox POS (Ultimate POS &amp; Billing) -->
             <div
-              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="saas"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay="100"
               data-aos-once="true"
             >
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a href="portfolio-details.html">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://cashboxglobal.com/"
+                    >
                       <img
-                        src="assets/images/portfolio/b.jpg"
-                        alt="Service Buyer app preview"
+                        src="assets/images/portfolio/cashboxglobal.jpg"
+                        alt="CashBox POS (Ultimate POS &amp; Billing) preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="portfolio-details.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://cashboxglobal.com/"
+                          >SaaS &amp; Smart Apps</a
+                        >
                       </div>
                     </div>
                     <h4 class="title">
-                      <a href="portfolio-details.html"
-                        >Service Buyer <i class="feather-arrow-up-right"></i
-                      ></a>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://cashboxglobal.com/"
+                      >
+                        CashBox POS (Ultimate POS &amp; Billing)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      An all-in-one cloud point-of-sale and retail management platform built for modern retail businesses and multi-store operations. Provides automated inventory tracking, rapid cashier checkouts, multi-branch data synchronization, and comprehensive operational sales reporting.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Project: Jogajog QR (যোগাযোগ QR) -->
             <div
-              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="saas"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay="150"
               data-aos-once="true"
             >
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a href="portfolio-details.html">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://jogajogqr.com/"
+                    >
                       <img
-                        src="assets/images/portfolio/b2-01.jpg"
-                        alt="Service Provider app preview"
+                        src="assets/images/portfolio/jogajogqr.jpg"
+                        alt="Jogajog QR (যোগাযোগ QR) preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="portfolio-details.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://jogajogqr.com/"
+                          >SaaS &amp; Smart Apps</a
+                        >
                       </div>
                     </div>
                     <h4 class="title">
-                      <a href="portfolio-details.html"
-                        >Service Provider <i class="feather-arrow-up-right"></i
-                      ></a>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://jogajogqr.com/"
+                      >
+                        Jogajog QR (যোগাযোগ QR)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      A privacy-first smart communications SaaS platform enabling secure voice calling, direct messaging, and vCard sharing via dynamic QR codes without exposing personal phone numbers. Powers verified contact ecosystems for vehicles, residential properties, and corporate enterprises.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="smartphone"></i> MULTI MOBILE APP</span>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Project: Asian Jewellery House -->
             <div
-              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay="200"
               data-aos-once="true"
             >
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a href="portfolio-details.html">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://asianjewelleryhouse.com/"
+                    >
                       <img
-                        src="assets/images/portfolio/b3-01.jpg"
-                        alt="Covid protection app preview"
+                        src="assets/images/portfolio/asianjewelleryhouse.jpg"
+                        alt="Asian Jewellery House preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="portfolio-details.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://asianjewelleryhouse.com/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
                       </div>
                     </div>
                     <h4 class="title">
-                      <a href="portfolio-details.html"
-                        >Covid 19 Protection Store
-                        <i class="feather-arrow-up-right"></i
-                      ></a>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://asianjewelleryhouse.com/"
+                      >
+                        Asian Jewellery House
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      A dual-system jewelry commerce solution featuring an elegant customer showroom alongside a comprehensive back-office POS and inventory management application. The POS handles karat-based precious metal pricing, stone weight calculations, counter sales, and PDF invoice generation.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Project: A Khayer International (RL 2235) -->
             <div
-              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="enterprise"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay="100"
               data-aos-once="true"
             >
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a href="portfolio-details.html">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://akhayerintl.com/"
+                    >
                       <img
-                        src="assets/images/portfolio/SUFI-01.jpg"
-                        alt="Ethnic music app preview"
+                        src="assets/images/portfolio/akhayerintl.jpg"
+                        alt="A Khayer International (RL 2235) preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="portfolio-details.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://akhayerintl.com/"
+                          >Enterprise ERP &amp; Systems</a
+                        >
                       </div>
                     </div>
                     <h4 class="title">
-                      <a href="portfolio-details.html"
-                        >Ethnic Music App
-                        <i class="feather-arrow-up-right"></i
-                      ></a>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://akhayerintl.com/"
+                      >
+                        A Khayer International (RL 2235)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      A custom internal ERP and accounting management system engineered for a licensed overseas manpower recruitment agency (RL 2235). Tracks overseas job applicant records, agent commission ledgers, banking transactions, multi-currency cash flows, and generates detailed agency audit reports.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="layers"></i> INTERNAL ERP</span>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Project: Alif Super Shop &amp; Model Pharma -->
             <div
-              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay="150"
               data-aos-once="true"
             >
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a href="portfolio-details.html">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://alifsuper.com/"
+                    >
                       <img
-                        src="assets/images/portfolio/b5-01.jpg"
-                        alt="Modern music app preview"
+                        src="assets/images/portfolio/alifsuper.jpg"
+                        alt="Alif Super Shop &amp; Model Pharma preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="portfolio-details.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://alifsuper.com/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
                       </div>
                     </div>
                     <h4 class="title">
-                      <a href="portfolio-details.html"
-                        >Modern Music App
-                        <i class="feather-arrow-up-right"></i
-                      ></a>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://alifsuper.com/"
+                      >
+                        Alif Super Shop &amp; Model Pharma
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      An omnichannel retail and pharmacy e-commerce system seamlessly bridging public online shopping with physical counter sales and inventory tracking. Manages product batches, daily expenses, cashier checkouts, Steadfast courier shipping, and printed sales invoices.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Project: Neoventis Group -->
             <div
-              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12"
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="enterprise"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay="200"
               data-aos-once="true"
             >
               <div class="rn-portfolio">
                 <div class="inner">
                   <div class="thumbnail">
-                    <a href="portfolio-details.html">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://neoventisgrp.com/"
+                    >
                       <img
-                        src="assets/images/portfolio/portfolio-06.jpg"
-                        alt="E-Courier app preview"
+                        src="assets/images/portfolio/neoventisgrp.jpg"
+                        alt="Neoventis Group preview"
+                        loading="lazy"
                       />
                     </a>
                   </div>
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="portfolio-details.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://neoventisgrp.com/"
+                          >Enterprise ERP &amp; Systems</a
+                        >
                       </div>
                     </div>
                     <h4 class="title">
-                      <a href="portfolio-details.html"
-                        >E-Courier <i class="feather-arrow-up-right"></i
-                      ></a>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://neoventisgrp.com/"
+                      >
+                        Neoventis Group
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
                     </h4>
+                    <p class="portfolio-desc-text">
+                      A pharmaceutical and biotechnology enterprise operating multiple specialized concerns including Star Laboratories and Biotechs manufacturing divisions. Features an internal ERP orchestrating raw material procurement, non-inventory costing, and multi-stage pharmaceutical production.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="layers"></i> INTERNAL ERP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Dhaka Commerce College Alumni (XDCCIAN) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="saas"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://xdccian.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/xdccian.jpg"
+                        alt="Dhaka Commerce College Alumni (XDCCIAN) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://xdccian.com/"
+                          >SaaS &amp; Smart Apps</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://xdccian.com/"
+                      >
+                        Dhaka Commerce College Alumni (XDCCIAN)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An official alumni community and event registration management ecosystem for former students of Dhaka Commerce College. Features alumni profiles and committee directories alongside an event registration engine with automated bKash/SSLCommerz payments and QR ticket generation.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="credit-card"></i> BILLING &amp; PAYMENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: ePayMaker -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="fintech"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://epaymaker.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/epaymaker.jpg"
+                        alt="ePayMaker preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://epaymaker.com/"
+                          >FinTech &amp; Billing</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://epaymaker.com/"
+                      >
+                        ePayMaker
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An integrated fintech payment enablement platform providing merchant acquiring, online payment gateway solutions, and POS integrations for SMBs. Facilitates multi-currency transaction processing, automated billing, merchant onboarding, and pre-application compliance management.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="credit-card"></i> BILLING &amp; PAYMENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Khidmah Hospital Dhaka -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://khidmahhospital.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/khidmahhospital.jpg"
+                        alt="Khidmah Hospital Dhaka preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://khidmahhospital.com/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://khidmahhospital.com/"
+                      >
+                        Khidmah Hospital Dhaka
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The official healthcare portal and patient service system for Khidmah Hospital in Dhaka, providing accessible hospital information, doctor profiles, and department schedules. Features an online appointment booking engine, diagnostic price lists, and administrative patient queue tracking.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: C-Box Canada -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://c-box.ca/"
+                    >
+                      <img
+                        src="assets/images/portfolio/cbox.jpg"
+                        alt="C-Box Canada preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://c-box.ca/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://c-box.ca/"
+                      >
+                        C-Box Canada
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An Ontario-based retail fashion and lifestyle e-commerce store offering contemporary apparel, footwear, accessories, and new arrival promotional deals. Delivers intuitive product browsing with size/color variant selection, personal wishlists, order tracking, and online PayPal payments.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="credit-card"></i> BILLING &amp; PAYMENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Henney Bear Bangladesh -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://henneybearlondon.com.bd/"
+                    >
+                      <img
+                        src="assets/images/portfolio/henneybearlondon.jpg"
+                        alt="Henney Bear Bangladesh preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://henneybearlondon.com.bd/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://henneybearlondon.com.bd/"
+                      >
+                        Henney Bear Bangladesh
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An official branded e-commerce platform distributing premium artistic tapestry handbags, backpacks, suitcases, and fashion accessories across Bangladesh. Features categorized product showcases with video previews, user reviews, cart checkout, and automated Steadfast courier dispatch.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: SS Online UK -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://ssonline.co.uk/"
+                    >
+                      <img
+                        src="assets/images/portfolio/ssonline.jpg"
+                        alt="SS Online UK preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://ssonline.co.uk/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://ssonline.co.uk/"
+                      >
+                        SS Online UK
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A UK-based multi-department online retail and wholesale e-commerce store with an integrated back-office POS and stock control system. Powers categorized shopping across electronics, grocery, and home essentials with real-time stock sync and automated delivery fulfillment.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: SS Gift Shop UK -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://ssgiftshop.co.uk/"
+                    >
+                      <img
+                        src="assets/images/portfolio/ssgiftshop.jpg"
+                        alt="SS Gift Shop UK preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://ssgiftshop.co.uk/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://ssgiftshop.co.uk/"
+                      >
+                        SS Gift Shop UK
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A specialized UK e-commerce storefront dedicated to personalized gift items, customized novelty merchandise, and bespoke party accessories. Operates on a centralized multi-store inventory model with integrated order processing and secure online checkout.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: BD Used Auto Parts (BD Junkyard) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://bdusedautoparts.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/bdusedautoparts.jpg"
+                        alt="BD Used Auto Parts (BD Junkyard) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://bdusedautoparts.com/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://bdusedautoparts.com/"
+                      >
+                        BD Used Auto Parts (BD Junkyard)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A specialized automotive salvage and recycling marketplace for browsing salvaged vehicles, searching used auto parts, and requesting instant trade-in quotes. Features custom vehicle inventory filtering, online cart checkout with PayPal integration, and vehicle buyback processing.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Nabarupa Lifestyle -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://nabarupa.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/nabarupa.jpg"
+                        alt="Nabarupa Lifestyle preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://nabarupa.com/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://nabarupa.com/"
+                      >
+                        Nabarupa Lifestyle
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The digital retail platform for a renowned traditional fashion and lifestyle boutique brand in Bangladesh, showcasing ethnic apparel, sarees, and designer collections. Facilitates collection browsing, showroom locator mapping, real-time cart handling, and SSLCommerz online checkout.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="credit-card"></i> BILLING &amp; PAYMENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: FreeWorldImports -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://freeworldimports.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/freeworldimports.jpg"
+                        alt="FreeWorldImports preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://freeworldimports.com/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://freeworldimports.com/"
+                      >
+                        FreeWorldImports
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A global B2B eCommerce liquidity services marketplace connecting international buyers and sellers of surplus inventory, machinery, and commercial vehicles. Features multi-category product catalogs, search filtering, secure trade inquiry workflows, and global commerce operations.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Aesthetic Features Ltd. (UK) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://aestheticfeaturesltd.co.uk/"
+                    >
+                      <img
+                        src="assets/images/portfolio/aestheticfeaturesltd.jpg"
+                        alt="Aesthetic Features Ltd. (UK) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://aestheticfeaturesltd.co.uk/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://aestheticfeaturesltd.co.uk/"
+                      >
+                        Aesthetic Features Ltd. (UK)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A UK-registered international retail and trading e-commerce marketplace operating cross-border channels across the United Kingdom and Bangladesh. Offers diverse inventory including apparel, personal healthcare, genuine leather goods, and premium home accessories.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Digital Store BD -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://digitalstorebd.net/"
+                    >
+                      <img
+                        src="assets/images/portfolio/digitalstorebd.jpg"
+                        alt="Digital Store BD preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://digitalstorebd.net/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://digitalstorebd.net/"
+                      >
+                        Digital Store BD
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An e-commerce platform and retail distributor in Bangladesh specializing in domestic and commercial RO/UV water purifiers and replacement filter cartridges. Supports nationwide direct online ordering, cash on delivery, and doorstep installation services.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Business Zone BD (Digital Store) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://businesszonebd.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/businesszonebd.jpg"
+                        alt="Business Zone BD (Digital Store) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://businesszonebd.com/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://businesszonebd.com/"
+                      >
+                        Business Zone BD (Digital Store)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An enterprise e-commerce and after-sales service portal for water purification systems and accessories. Features comprehensive product catalog browsing, cart checkout, and dedicated booking workflows for purifier maintenance, filter replacement, and relocation.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: FCFT Agro -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://fcftagro.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/fcftagro.jpg"
+                        alt="FCFT Agro preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://fcftagro.com/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://fcftagro.com/"
+                      >
+                        FCFT Agro
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An agricultural e-commerce platform and agro-commodity supply portal connecting farmers and consumers with fresh agricultural produce, seeds, and agro-inputs. Includes interactive cart management, geo-targeted delivery routing by district and upazila, and online SSLCommerz checkout.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="credit-card"></i> BILLING &amp; PAYMENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Heavens Light -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="ecommerce"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://heavenslight.com.bd/"
+                    >
+                      <img
+                        src="assets/images/portfolio/heavenslight.jpg"
+                        alt="Heavens Light preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://heavenslight.com.bd/"
+                          >E-Commerce &amp; Retail POS</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://heavenslight.com.bd/"
+                      >
+                        Heavens Light
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An e-commerce storefront specializing in modern architectural and residential lighting fixtures, decorative chandeliers, and electrical appliances. Offers multi-tier category filtering, user wishlists, automated shipping coordination, and secure payment processing via SSLCommerz.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="credit-card"></i> BILLING &amp; PAYMENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Dana Group -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.danagrpbd.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/danagrpbd.jpg"
+                        alt="Dana Group preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.danagrpbd.com/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.danagrpbd.com/"
+                      >
+                        Dana Group
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The corporate web portal for a premier industrial conglomerate in Bangladesh established in 1967, operating across manufacturing, engineering, and international trading. Showcases corporate milestones, executive leadership profiles, subsidiary concerns, and comprehensive technical service catalogs.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Peoples Ceramic Industries Ltd. -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://peoplesceramic.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/peoplesceramic.jpg"
+                        alt="Peoples Ceramic Industries Ltd. preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://peoplesceramic.com/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://peoplesceramic.com/"
+                      >
+                        Peoples Ceramic Industries Ltd.
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The digital catalog and corporate presence for one of Bangladesh&#x27;s leading porcelain and ceramic tableware manufacturers and exporters. Showcases factory production capabilities, dining patterns, shapes, and export certifications, paired with an institutional purchase inquiry system.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Aqua Paints (দেশের রঙে রাঙাই দেশ) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.aquapaints.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/aquapaints.jpg"
+                        alt="Aqua Paints (দেশের রঙে রাঙাই দেশ) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.aquapaints.com/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.aquapaints.com/"
+                      >
+                        Aqua Paints (দেশের রঙে রাঙাই দেশ)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The official corporate web presence and product catalog portal for one of Bangladesh&#x27;s premier industrial and architectural paint manufacturers. Showcases extensive coating solutions, corporate certifications, dealer enlistment portals, and interactive product color shade guides.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Welco Engineering Ltd. -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://welcoeng.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/welcoeng.jpg"
+                        alt="Welco Engineering Ltd. preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://welcoeng.com/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://welcoeng.com/"
+                      >
+                        Welco Engineering Ltd.
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A corporate web portal for an industrial engineering and energy solutions provider in Bangladesh specializing in gas generator overhaul, power supply, and spare parts. Highlights engineering capabilities, industrial machinery catalogs, project showcases, and corporate client testimonials.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Biswas Trading &amp; Construction (BTC) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://btc.com.bd/"
+                    >
+                      <img
+                        src="assets/images/portfolio/btc.jpg"
+                        alt="Biswas Trading &amp; Construction (BTC) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://btc.com.bd/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://btc.com.bd/"
+                      >
+                        Biswas Trading &amp; Construction (BTC)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The official corporate website for an established civil engineering, architectural design, and infrastructure construction enterprise in Bangladesh. Presents extensive portfolios of completed engineering projects, structural architecture profiles, and national industry achievements.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Sheba Holdings Limited -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://shebaholdings.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/shebaholdings.jpg"
+                        alt="Sheba Holdings Limited preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://shebaholdings.com/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://shebaholdings.com/"
+                      >
+                        Sheba Holdings Limited
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The corporate web platform for a real estate and property development firm managing premium residential and commercial construction ventures. Provides dynamic property search filters by ongoing, upcoming, and handed-over statuses, along with an interactive BotMan AI chatbot.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Bangladesh IP (BangladeshIP Global) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.bangladeship.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/bangladeship.jpg"
+                        alt="Bangladesh IP (BangladeshIP Global) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.bangladeship.com/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.bangladeship.com/"
+                      >
+                        Bangladesh IP (BangladeshIP Global)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A specialized global intellectual property consultancy and digital knowledge platform guiding businesses through trademark, patent, and copyright registrations in Bangladesh and worldwide. Features country IP search tools, legal filing directories, and official gazette publications.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: The Daily Asian Mirror (এশিয়ান মিরর) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://dailyasianmirror.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/dailyasianmirror.jpg"
+                        alt="The Daily Asian Mirror (এশিয়ান মিরর) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://dailyasianmirror.com/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://dailyasianmirror.com/"
+                      >
+                        The Daily Asian Mirror (এশিয়ান মিরর)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      An online news publication and digital media portal delivering real-time national and international news, multimedia stories, and editorial columns. Features a complete content management system with automated category routing, contributor management, and an integrated e-paper viewer.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Softtech Solution -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="saas"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://softtechsolutions.net/"
+                    >
+                      <img
+                        src="assets/images/portfolio/softtechsolutions.jpg"
+                        alt="Softtech Solution preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://softtechsolutions.net/"
+                          >SaaS &amp; Smart Apps</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://softtechsolutions.net/"
+                      >
+                        Softtech Solution
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A corporate and software solutions platform showcasing proprietary point-of-sale and business management software for retail and wholesale businesses. Offers product consultation booking, demo requests, and feature presentations for POS and inventory management workflows.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="database"></i> POS &amp; INVENTORY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: SasApplication -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="saas"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://sasapplication.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/sasapplication.jpg"
+                        alt="SasApplication preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://sasapplication.com/"
+                          >SaaS &amp; Smart Apps</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://sasapplication.com/"
+                      >
+                        SasApplication
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A cloud-based software subscription hub offering a centralized ecosystem of business and industry solutions including CashBox, Softacademia, and SmartCare. Manages client software provisioning, license distribution, tier-based billing, and recurring SaaS subscriptions.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="credit-card"></i> BILLING &amp; PAYMENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Your Treasure Seeker -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="saas"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.yourtreasureseeker.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/yourtreasureseeker.jpg"
+                        alt="Your Treasure Seeker preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.yourtreasureseeker.com/"
+                          >SaaS &amp; Smart Apps</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.yourtreasureseeker.com/"
+                      >
+                        Your Treasure Seeker
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A specialized worldwide directory and service platform connecting individuals who lost valuables with professional metal detecting specialists. Facilitates locating and hiring recovery experts near user locations and enables certified detectorists to register profiles globally.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Youth Insurance -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="fintech"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.youthins.com/"
+                    >
+                      <img
+                        src="assets/images/portfolio/youthins.jpg"
+                        alt="Youth Insurance preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.youthins.com/"
+                          >FinTech &amp; Billing</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.youthins.com/"
+                      >
+                        Youth Insurance
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A modern InsurTech portal and insurance services platform providing digital policy comparisons, insurance claims assistance, and quote requests for life, health, motor, and business insurance policies in Bangladesh.
+                    </p>
+                    <span class="portfolio-badge"><i data-feather="credit-card"></i> BILLING &amp; PAYMENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: Summerfield International School -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://summerfield.edu.bd/"
+                    >
+                      <img
+                        src="assets/images/portfolio/summerfield.jpg"
+                        alt="Summerfield International School preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://summerfield.edu.bd/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://summerfield.edu.bd/"
+                      >
+                        Summerfield International School
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The official academic web portal for a premier English-medium educational institution in Bangladesh. Provides prospective and enrolled students with academic curriculums, online pre-admission processing, Cambridge examination venue schedules, and institutional announcements.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: N. Jahan LPC (Canada) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://njahanlaw.ca/"
+                    >
+                      <img
+                        src="assets/images/portfolio/njahanlaw.jpg"
+                        alt="N. Jahan LPC (Canada) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://njahanlaw.ca/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://njahanlaw.ca/"
+                      >
+                        N. Jahan LPC (Canada)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      The official corporate website for an Ontario-based Canadian immigration, real estate, civil litigation, and corporate legal practice firm. Provides detailed legal practice areas, attorney credentials, legal consultation scheduling, and secure communication channels for clients.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project: 84 Event Group (৮৪ ইভেন্ট গ্রুপ সংস্থা) -->
+            <div
+              class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 portfolio-item"
+              data-category="corporate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <div class="rn-portfolio">
+                <div class="inner">
+                  <div class="thumbnail">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://84eventgroup.org/"
+                    >
+                      <img
+                        src="assets/images/portfolio/84eventgroup.jpg"
+                        alt="84 Event Group (৮৪ ইভেন্ট গ্রুপ সংস্থা) preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="category-info">
+                      <div class="category-list">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://84eventgroup.org/"
+                          >Corporate &amp; Healthcare</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="title">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://84eventgroup.org/"
+                      >
+                        84 Event Group (৮৪ ইভেন্ট গ্রুপ সংস্থা)
+                        <i class="feather-arrow-up-right"></i>
+                      </a>
+                    </h4>
+                    <p class="portfolio-desc-text">
+                      A non-profit community and alumni welfare organization platform in Bangladesh dedicated to social services, humanitarian aid, and community cohesion. Provides an online member directory and registration portal, event schedule publications, and community outreach programs.
+                    </p>
+                    
                   </div>
                 </div>
               </div>
@@ -429,5 +2281,65 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // Category Filter Engine
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterBtns = document.querySelectorAll(".portfolio-filter-btn");
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+        // Calculate and update count badges
+        const counts = {
+          all: portfolioItems.length,
+          ecommerce: 0,
+          fintech: 0,
+          enterprise: 0,
+          saas: 0,
+          corporate: 0
+        };
+
+        portfolioItems.forEach(item => {
+          const cat = item.getAttribute("data-category");
+          if (counts[cat] !== undefined) {
+            counts[cat]++;
+          }
+        });
+
+        Object.keys(counts).forEach(key => {
+          const badge = document.getElementById("count-" + key);
+          if (badge) {
+            badge.textContent = counts[key];
+          }
+        });
+
+        // Filter button click event
+        filterBtns.forEach(btn => {
+          btn.addEventListener("click", function () {
+            filterBtns.forEach(b => b.classList.remove("active"));
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+
+            portfolioItems.forEach(item => {
+              const itemCat = item.getAttribute("data-category");
+              if (filterValue === "all" || itemCat === filterValue) {
+                item.classList.remove("is-hidden");
+                item.style.opacity = "0";
+                item.style.transform = "translateY(15px)";
+                setTimeout(() => {
+                  item.style.opacity = "1";
+                  item.style.transform = "translateY(0)";
+                }, 50);
+              } else {
+                item.classList.add("is-hidden");
+              }
+            });
+
+            if (typeof feather !== "undefined") {
+              feather.replace();
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
