@@ -40,11 +40,11 @@ function renderImage(imgPath, alt, width, height, isEager = false) {
   
   if (hasWebp) {
     return `<picture>
-      <source srcset="/${webpPath}" type="image/webp" />
-      <img src="/${imgPath}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" ${loadingAttr} />
+      <source srcset="/${webpPath}" type="image/webp">
+      <img src="/${imgPath}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" ${loadingAttr}>
     </picture>`;
   }
-  return `<img src="/${imgPath}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" ${loadingAttr} />`;
+  return `<img src="/${imgPath}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" ${loadingAttr}>`;
 }
 
 // Generate static case study HTML page
@@ -181,47 +181,47 @@ function generateProjectPageHtml(project, allProjects) {
   return `<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>${pageTitle}</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="${escapeHtml(metaDesc)}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="canonical" href="${canonicalUrl}" />
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="${escapeHtml(metaDesc)}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="${canonicalUrl}">
 
     <!-- OpenGraph Tags -->
-    <meta property="og:type" content="article" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="${escapeHtml(siteConfig.siteTitle)}" />
-    <meta property="og:title" content="${escapeHtml(rawTitle)}" />
-    <meta property="og:description" content="${escapeHtml(project.tagline)}" />
-    <meta property="og:url" content="${canonicalUrl}" />
-    <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:image:secure_url" content="${imageUrl}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="${escapeHtml(project.title)} Preview Showcase" />
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="${escapeHtml(siteConfig.siteTitle)}">
+    <meta property="og:title" content="${escapeHtml(rawTitle)}">
+    <meta property="og:description" content="${escapeHtml(project.tagline)}">
+    <meta property="og:url" content="${canonicalUrl}">
+    <meta property="og:image" content="${imageUrl}">
+    <meta property="og:image:secure_url" content="${imageUrl}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="${escapeHtml(project.title)} Preview Showcase">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${escapeHtml(rawTitle)}" />
-    <meta name="twitter:description" content="${escapeHtml(project.tagline)}" />
-    <meta name="twitter:image" content="${imageUrl}" />
-    <meta name="twitter:creator" content="@emon1432" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(rawTitle)}">
+    <meta name="twitter:description" content="${escapeHtml(project.tagline)}">
+    <meta name="twitter:image" content="${imageUrl}">
+    <meta name="twitter:creator" content="@emon1432">
 
     <!-- Favicon & PWA -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
-    <link rel="apple-touch-icon" href="/assets/images/icons/icon-192.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/assets/css/slick.css" />
-    <link rel="stylesheet" href="/assets/css/slick-theme.css" />
-    <link rel="stylesheet" href="/assets/css/aos.css" />
-    <link rel="stylesheet" href="/assets/css/feature.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/devicon.min.css?v=2.16.0" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
+    <link rel="stylesheet" href="/assets/css/feature.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/devicon.min.css?v=2.16.0">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -408,7 +408,7 @@ ${JSON.stringify(jsonLd, null, 2)}
           <div class="header-left">
             <div class="logo">
               <a href="/">
-                <img src="/assets/images/logo/logo-2.png" alt="Khairul Islam Logo" width="160" height="48" />
+                <img src="/assets/images/logo/logo-2.png" alt="Khairul Islam Logo" width="160" height="48">
               </a>
             </div>
           </div>
@@ -454,7 +454,7 @@ ${JSON.stringify(jsonLd, null, 2)}
         <div class="menu-top">
           <div class="menu-header">
             <a class="logo" href="/">
-              <img src="/assets/images/logo/logos-circle.png" alt="Khairul Islam Logo" width="60" height="60" />
+              <img src="/assets/images/logo/logos-circle.png" alt="Khairul Islam Logo" width="60" height="60">
             </a>
             <div class="close-button">
               <button class="close-menu-activation close" aria-label="Close Menu">
@@ -752,27 +752,27 @@ function generate404Html() {
   return `<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>${escapeHtml(pageTitle)}</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="${escapeHtml(metaDesc)}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="canonical" href="${canonicalUrl}" />
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="${escapeHtml(metaDesc)}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="${canonicalUrl}">
 
     <!-- Favicon & PWA -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
-    <link rel="apple-touch-icon" href="/assets/images/icons/icon-192.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/icons/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/assets/css/slick.css" />
-    <link rel="stylesheet" href="/assets/css/slick-theme.css" />
-    <link rel="stylesheet" href="/assets/css/aos.css" />
-    <link rel="stylesheet" href="/assets/css/feature.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/devicon.min.css?v=2.16.0" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
+    <link rel="stylesheet" href="/assets/css/feature.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/devicon.min.css?v=2.16.0">
 
     <style>
       .error-area {
@@ -854,7 +854,7 @@ function generate404Html() {
           <div class="header-left">
             <div class="logo">
               <a href="/">
-                <img src="/assets/images/logo/logo-2.png" alt="Khairul Islam Logo" width="160" height="48" />
+                <img src="/assets/images/logo/logo-2.png" alt="Khairul Islam Logo" width="160" height="48">
               </a>
             </div>
           </div>

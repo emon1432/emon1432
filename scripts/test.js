@@ -96,7 +96,7 @@ function runTests() {
     // Title & Meta
     const expectedTitle = `<title>${escapeHtml(p.title)} | Case Study | ${config.author.fullName}</title>`;
     const hasTitle = html.includes(expectedTitle);
-    const hasCanonical = html.includes(`<link rel="canonical" href="https://emonideas.com/projects/${p.id}/" />`);
+    const hasCanonical = html.includes(`<link rel="canonical" href="https://emonideas.com/projects/${p.id}/"`) || html.includes(`<link rel="canonical" href="https://emonideas.com/projects/${p.id}/">`);
     const hasOg = html.includes(`property="og:url" content="https://emonideas.com/projects/${p.id}/"`);
     const hasTwitter = html.includes('name="twitter:card" content="summary_large_image"');
     const hasSingleH1 = (html.match(/<h1[^>]*>/g) || []).length === 1;
