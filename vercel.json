@@ -9,7 +9,7 @@
         {
           "type": "query",
           "key": "id",
-          "value": "(?<slug>[^&]+)"
+          "value": "(?<slug>.*)"
         }
       ],
       "destination": "/projects/:slug/",
@@ -21,7 +21,7 @@
         {
           "type": "query",
           "key": "id",
-          "value": "(?<slug>[^&]+)"
+          "value": "(?<slug>.*)"
         }
       ],
       "destination": "/projects/:slug/",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.(?:ico|png|jpg|jpeg|webp|svg|woff2|woff|ttf|css|js)",
+      "source": "/(.*\\.(ico|png|jpg|jpeg|webp|svg|woff2|woff|ttf|css|js))",
       "headers": [
         {
           "key": "Cache-Control",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.html",
+      "source": "/(.*\\.html)",
       "headers": [
         {
           "key": "Cache-Control",

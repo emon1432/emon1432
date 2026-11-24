@@ -42,7 +42,7 @@
 
 <img
   width="49%"
-  src="https://github-readme-stats.vercel.app/api?username=emon1432&show_icons=true&count_private=true&include_all_commits=true&hide_rank=false&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
+  src="https://github-readme-stats.vercel.app/api?username=emon1432&show_icons=true&hide_rank=false&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
   alt="GitHub Stats"
 />
 <img
