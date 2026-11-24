@@ -27,9 +27,7 @@
 <a href="https://www.facebook.com/emon143298" target="_blank">
   <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
 </a>
-
-<br/><br/>
-
+<br/>
 <picture>
   <img
     src="https://streak-stats.demolab.com/?user=emon1432&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180"
@@ -37,25 +35,16 @@
     alt="GitHub Streak Stats"
   />
 </picture>
-
-<br/>
-
-<p align="center">
-  <img
+<img
     height="195"
     src="https://github-readme-stats.vercel.app/api?username=emon1432&show_icons=true&hide_rank=false&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
     alt="GitHub Stats"
-  />
-  &nbsp;&nbsp;
-  <img
+/>
+<img
     height="195"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=emon1432&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=467"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=emon1432&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F"
     alt="Top Languages"
-  />
-</p>
-
-<br/><br/>
-
+/>
 <img
   src="https://github-readme-activity-graph.vercel.app/graph?username=emon1432&bg_color=0A101F&color=A78BFA&line=22D3EE&point=50FA7B&area=true&hide_border=true"
   width="100%"
@@ -114,131 +103,9 @@
 
 ---
 
-## 💼 Featured Engineering Projects
-
-<details open>
-<summary><strong>01 · CashBox POS (Ultimate Enterprise POS & ERP System)</strong></summary>
-
-<br/>
-
-A comprehensive retail enterprise solution featuring multi-branch inventory management, real-time transaction tracking, and automated financial reporting.
-
-| Dimension | Details |
-| :--- | :--- |
-| **Stack** | PHP • Laravel • React.js • MySQL • Redis • RESTful API |
-| **Scale** | Multi-store inventory, high-frequency checkout & real-time sync |
-| **Architecture** | Modular ERP design, optimized query plans & transactional integrity |
-| **Performance** | Sub-100ms API response time with Redis caching and index optimization |
-| **Impact** | Automating wholesale & supermarket store operations end-to-end |
-| **Portfolio** | [View Case Study](https://emon1432.github.io/emon1432/portfolio-details.html?id=cashbox-pos) |
-
-### Engineering Perspective
-Engineered with ACID compliance in mind to prevent inventory race conditions across concurrent branch checkouts. Implemented background queued jobs for asynchronous receipt generation and audit logging.
-
-</details>
-
-<br/>
-
-<details>
-<summary><strong>02 · Jogajog QR (যোগাযোগ QR - Smart Digital Networking SaaS)</strong></summary>
-
-<br/>
-
-Dynamic SaaS platform enabling contactless enterprise business card exchanges, smart profile management, and contact synchronization via adaptive QR codes.
-
-| Dimension | Details |
-| :--- | :--- |
-| **Stack** | Laravel • React • Dynamic QR Engine • MySQL • REST APIs |
-| **Scale** | Mobile-first SaaS with high-concurrency public profile routing |
-| **Performance** | Ultra-lightweight asset footprint & CDN-cached profile assets |
-| **Impact** | Modernizing corporate identity sharing across Bangladeshi enterprises |
-| **Portfolio** | [View Case Study](https://emon1432.github.io/emon1432/portfolio-details.html?id=jogajog-qr) |
-
-### Engineering Perspective
-Built an instantaneous dynamic vector QR rendering pipeline with server-side vCard payload injection, minimizing load time for cellular network users.
-
-</details>
-
-<br/>
-
-<details>
-<summary><strong>03 · Asian Jewellery House (Luxury E-Commerce & Inventory Management)</strong></summary>
-
-<br/>
-
-Enterprise e-commerce and retail management platform for high-value precious metals and jewelry, featuring real-time market rate adjustments and secure checkout.
-
-| Dimension | Details |
-| :--- | :--- |
-| **Stack** | Laravel • JavaScript • MySQL • Payment Gateways • RESTful APIs |
-| **Scale** | Catalog management with dynamic weight-based gold pricing engine |
-| **Security** | Secure payment tokenization, multi-factor admin authentication |
-| **Impact** | Digitized high-value brick-and-mortar jewelry trading |
-| **Portfolio** | [View Case Study](https://emon1432.github.io/emon1432/portfolio-details.html?id=asian-jewellery) |
-
-### Engineering Perspective
-Architected dynamic price recalculation services based on live commodity feeds, ensuring zero discrepancies between warehouse stock values and customer cart transactions.
-
-</details>
-
----
-
-## 🏢 Professional Experience
-
-### Senior Software Engineer · Wanit LTD
-**March 2025 – Present · Full Time**
-
-- Leading core backend architecture, system scaling, and microservices design across production enterprise web applications.
-- Architecting high-concurrency database schemas with MySQL, indexing strategies, and caching layers with Redis.
-- Implementing robust RESTful APIs and modern full-stack workflows using Laravel and React.js.
-- Driving engineering excellence, code reviews, architectural documentation, and mentoring team developers.
-
-**Skills:** `PHP` `Laravel` `MySQL` `React.js` `Microservices` `System Architecture` `Docker` `REST APIs`
-
----
-
-### Backend Developer · Wanit LTD
-**January 2024 – February 2025 · Full Time**
-
-- Engineered robust backend architectures, payment gateway integrations, and transactional database schemas.
-- Developed interactive frontend interfaces using React.js, modern JavaScript (ES6+), and responsive CSS frameworks.
-- Optimized query execution plans, reducing server response times on database-intensive endpoints by over 40%.
-
-**Skills:** `PHP` `Laravel` `MySQL` `JavaScript` `React.js` `API Integration` `Database Optimization`
-
----
-
-### Web Developer · HSBLCO Solution
-**March 2022 – December 2023 · Full Time**
-
-- Developed full-lifecycle commercial websites, e-commerce stores, and enterprise portals with PHP, Laravel, and MySQL.
-- Implemented clean UI/UX frontend designs, cross-browser compatibility, and client requirement integrations.
-
-**Skills:** `PHP` `Laravel` `MySQL` `JavaScript` `Bootstrap` `Responsive Design`
-
----
-
-## 🏆 Achievements & Milestones
-
-<div align="center">
-
-| Milestone | Details |
-| :---: | :--- |
-| **5+ Years Engineering Experience** | Professional track record across backend architecture, databases, and full-stack systems |
-| **35+ Production Builds Delivered** | Architected and deployed enterprise ERPs, POS, SaaS platforms, and mobile-ready APIs |
-| **High-Load Architecture & Optimization** | Specialization in MySQL schema indexing, caching strategies, and microservices |
-| **Engineering Mentorship** | Active advocate of clean code, architectural clarity, and team mentorship |
-
-</div>
-
----
-
 <div align="center">
 
 ### `Architect scalable systems. Write clean code. Solve real-world problems.`
 
-<br/>
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:4f46e5,100:312e81&height=120&section=footer&animation=fadeIn" width="100%" />
-
 </div>
