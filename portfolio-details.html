@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Portfolio Details | Khairul Islam</title>
+    <title id="pageTitle">Portfolio Case Study | Khairul Islam</title>
     <meta name="robots" content="index, follow" />
     <meta
+      id="pageMetaDesc"
       name="description"
-      content="Portfolio project case study by Khairul Islam."
+      content="In-depth software engineering case study by Khairul Islam."
     />
     <meta
       name="viewport"
@@ -24,6 +25,128 @@
     <link rel="stylesheet" href="assets/css/aos.css" />
     <link rel="stylesheet" href="assets/css/feature.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .portfolio-details-card .thumbnail {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px #1c1e22, -10px -10px 20px #262a2e;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .portfolio-details-card .thumbnail img {
+        width: 100%;
+        max-height: 520px;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+      }
+      .portfolio-project-stat {
+        background: #1e2024;
+        padding: 24px 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        text-align: center;
+        height: 100%;
+      }
+      .portfolio-project-stat h4 {
+        color: #ff014f;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .portfolio-project-stat p {
+        color: #c4cfde;
+        font-size: 13px;
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+      .portfolio-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px 12px;
+        border-radius: 4px;
+        background: rgba(255, 1, 79, 0.1);
+        border: 1px solid rgba(255, 1, 79, 0.25);
+        color: #ff014f;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .portfolio-badge svg {
+        width: 14px;
+        height: 14px;
+      }
+      .portfolio-cta-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+      }
+      .portfolio-cta-group .rn-btn.primary-live {
+        background: linear-gradient(145deg, #ff014f, #d11448);
+        color: #ffffff !important;
+        box-shadow: 0 4px 15px rgba(255, 1, 79, 0.4);
+        border: none;
+      }
+      .portfolio-cta-group .rn-btn.primary-live:hover {
+        background: linear-gradient(145deg, #d11448, #ff014f);
+        transform: translateY(-2px);
+      }
+      .case-study-section-title {
+        color: #c4cfde;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .case-study-section-title svg {
+        color: #ff014f;
+        width: 20px;
+        height: 20px;
+      }
+      .portfolio-feature-list li {
+        color: #c4cfde;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .portfolio-feature-list li svg {
+        color: #ff014f;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        margin-top: 4px;
+      }
+      .portfolio-text-block {
+        color: #878e99;
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+      .related-project-card .thumbnail {
+        height: 200px;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      .related-project-card .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: transform 0.5s ease;
+      }
+      .related-project-card:hover .thumbnail img {
+        transform: scale(1.05);
+      }
+    </style>
   </head>
 
   <body class="template-color-1" data-spy="scroll" data-offset="70">
@@ -125,12 +248,20 @@
             <span class="title">find me</span>
             <ul class="social-share d-flex liststyle">
               <li class="facebook">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/e.mon14321">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/e.mon14321"
+                >
                   <i data-feather="facebook"></i>
                 </a>
               </li>
               <li class="instagram">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/emu_mon/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/emu_mon/"
+                >
                   <i data-feather="instagram"></i>
                 </a>
               </li>
@@ -152,6 +283,7 @@
     <main class="main-page-wrapper">
       <div class="rn-portfolio-area rn-section-gap section-separator">
         <div class="container">
+          <!-- Header Area -->
           <div class="row">
             <div class="col-lg-12">
               <div
@@ -160,14 +292,21 @@
                 data-aos-duration="500"
                 data-aos-once="true"
               >
-                <span class="subtitle">Portfolio Case Study</span>
-                <h2 class="title">Service Buyer Mobile Application</h2>
+                <span class="subtitle" id="heroSubtitle">Engineering Case Study</span>
+                <h2 class="title" id="heroTitle">Project Title</h2>
+                <p class="portfolio-stats-summary" id="heroTagline">
+                  Project Tagline &amp; High-level Overview
+                </p>
+                <div class="mt--20" id="heroBadgeContainer">
+                  <!-- Dynamic Badge inserted here -->
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="row row--25 mt--20">
-            <div class="col-12 mt--30">
+          <!-- Main Case Study Content Area -->
+          <div class="row row--25 mt--30">
+            <div class="col-12">
               <article
                 class="rn-blog portfolio-details-card"
                 data-aos="fade-up"
@@ -176,101 +315,90 @@
                 data-aos-once="true"
               >
                 <div class="inner">
+                  <!-- Big Showcase Thumbnail -->
                   <div class="thumbnail">
                     <img
-                      src="assets/images/portfolio/b.jpg"
-                      alt="Service Buyer full preview"
+                      id="projectImage"
+                      src="assets/images/portfolio/cashboxglobal.jpg"
+                      alt="Project preview"
                     />
                   </div>
 
                   <div class="content">
-                    <div class="category-info portfolio-details-meta">
-                      <div class="category-list">
-                        <a href="portfolio.html">React Native Product</a>
-                      </div>
-                      <div class="meta">
-                        <span><i data-feather="calendar"></i> March 09, 2026</span>
-                      </div>
+                    <!-- 3 Impact Metric Stats Cards -->
+                    <div class="row row--25 mt--10" id="metricsRow">
+                      <!-- Injected via JavaScript -->
                     </div>
 
-                    <ul class="portfolio-details-meta-list liststyle">
-                      <li><i data-feather="smartphone"></i> Android and iOS</li>
-                      <li><i data-feather="code"></i> React Native, Firebase</li>
-                      <li><i data-feather="users"></i> Buyer and provider roles</li>
-                    </ul>
-
-                    <div class="portfolio-project-hero mt--30">
-                      <p>
-                        Service Buyer is a two-sided marketplace app where users can
-                        discover trusted professionals, request services instantly, and
-                        track progress in a clean and simple workflow.
-                      </p>
-                      <p>
-                        The focus of this build was reducing user friction. I designed a
-                        direct booking flow, fast sign-in via OTP, and lightweight
-                        profile screens that keep key actions visible without visual
-                        clutter.
-                      </p>
-                    </div>
-
-                    <div class="row row--25 mt--10">
-                      <div class="col-lg-4 col-md-6 col-sm-12 mt--20">
-                        <div class="portfolio-project-stat">
-                          <h4>35% Faster</h4>
-                          <p>Average booking completion after onboarding redesign.</p>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6 col-sm-12 mt--20">
-                        <div class="portfolio-project-stat">
-                          <h4>99.2%</h4>
-                          <p>Push notification delivery success across active devices.</p>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6 col-sm-12 mt--20">
-                        <div class="portfolio-project-stat">
-                          <h4>4.8/5</h4>
-                          <p>User rating from internal pilot feedback sessions.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <h4 class="portfolio-details-heading mt--50">Core Features</h4>
-                    <ul class="portfolio-feature-list liststyle">
-                      <li>
-                        <i data-feather="check-circle"></i>
-                        Real-time service request and order status updates.
-                      </li>
-                      <li>
-                        <i data-feather="check-circle"></i>
-                        OTP authentication with secure token refresh flow.
-                      </li>
-                      <li>
-                        <i data-feather="check-circle"></i>
-                        In-app payment integration with transaction tracking.
-                      </li>
-                      <li>
-                        <i data-feather="check-circle"></i>
-                        Dual dashboard experience for buyer and provider accounts.
-                      </li>
-                    </ul>
-
-                    <h4 class="portfolio-details-heading mt--50">Technology Stack</h4>
-                    <div class="portfolio-tech-stack">
-                      <a href="portfolio.html">React Native</a>
-                      <a href="portfolio.html">Firebase</a>
-                      <a href="portfolio.html">REST API</a>
-                      <a href="portfolio.html">Push Notifications</a>
-                      <a href="portfolio.html">Payment Gateway</a>
-                    </div>
-
-                    <div class="portfolio-cta-group mt--50">
+                    <!-- CTA Actions Bar -->
+                    <div class="portfolio-cta-group mt--40 mb--40">
+                      <a
+                        id="liveSiteBtn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="#"
+                        class="rn-btn primary-live"
+                      >
+                        <span>VISIT LIVE WEBSITE</span>
+                        <i data-feather="external-link"></i>
+                      </a>
                       <a href="portfolio.html" class="rn-btn">
-                        <span>BACK TO PORTFOLIO</span>
-                        <i data-feather="arrow-left"></i>
+                        <span>BACK TO ALL PROJECTS</span>
+                        <i data-feather="grid"></i>
                       </a>
                       <a href="index.html#contacts" class="rn-btn">
-                        <span>START A PROJECT</span>
-                        <i data-feather="send"></i>
+                        <span>GET IN TOUCH</span>
+                        <i data-feather="mail"></i>
+                      </a>
+                    </div>
+
+                    <!-- Section: Executive Summary -->
+                    <h4 class="case-study-section-title">
+                      <i data-feather="info"></i> Executive Summary &amp; Overview
+                    </h4>
+                    <p class="portfolio-text-block" id="projectOverview">
+                      Overview text...
+                    </p>
+
+                    <!-- Section: Problem & Challenge -->
+                    <h4 class="case-study-section-title">
+                      <i data-feather="alert-circle"></i> Business Context &amp; Challenge
+                    </h4>
+                    <p class="portfolio-text-block" id="projectChallenge">
+                      Challenge text...
+                    </p>
+
+                    <!-- Section: Engineered Solution -->
+                    <h4 class="case-study-section-title">
+                      <i data-feather="cpu"></i> Engineered Solution &amp; Architecture
+                    </h4>
+                    <p class="portfolio-text-block" id="projectSolution">
+                      Solution text...
+                    </p>
+
+                    <!-- Section: Key Functional Modules -->
+                    <h4 class="case-study-section-title mt--40">
+                      <i data-feather="check-square"></i> Core Functional Capabilities
+                    </h4>
+                    <ul class="portfolio-feature-list liststyle" id="featuresList">
+                      <!-- Injected via JavaScript -->
+                    </ul>
+
+                    <!-- Bottom CTA Banner -->
+                    <div class="portfolio-cta-group mt--50 pt--30" style="border-top: 1px solid rgba(255,255,255,0.08);">
+                      <a
+                        id="bottomLiveBtn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="#"
+                        class="rn-btn primary-live"
+                      >
+                        <span>OPEN LIVE PROJECT</span>
+                        <i data-feather="arrow-up-right"></i>
+                      </a>
+                      <a href="portfolio.html" class="rn-btn">
+                        <span>EXPLORE MORE PROJECTS</span>
+                        <i data-feather="arrow-left"></i>
                       </a>
                     </div>
                   </div>
@@ -279,114 +407,18 @@
             </div>
           </div>
 
+          <!-- Section: Related Projects -->
           <div class="row mt--60">
             <div class="col-lg-12">
               <div class="section-title text-center" data-aos="fade-up">
-                <span class="subtitle">More Work</span>
-                <h3 class="title">Related Projects</h3>
+                <span class="subtitle">Explore Further</span>
+                <h3 class="title">Related Portfolio Projects</h3>
               </div>
             </div>
           </div>
 
-          <div class="row row--25 mt--10">
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 mt--30"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-once="true"
-            >
-              <div class="rn-portfolio">
-                <div class="inner">
-                  <div class="thumbnail">
-                    <a href="portfolio-details.html">
-                      <img
-                        src="assets/images/portfolio/b2-01.jpg"
-                        alt="Service Provider project"
-                      />
-                    </a>
-                  </div>
-                  <div class="content">
-                    <div class="category-info">
-                      <div class="category-list">
-                        <a href="portfolio.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
-                      </div>
-                    </div>
-                    <h4 class="title">
-                      <a href="portfolio-details.html">Service Provider</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 mt--30"
-              data-aos="fade-up"
-              data-aos-delay="150"
-              data-aos-once="true"
-            >
-              <div class="rn-portfolio">
-                <div class="inner">
-                  <div class="thumbnail">
-                    <a href="portfolio-details.html">
-                      <img
-                        src="assets/images/portfolio/SUFI-01.jpg"
-                        alt="Ethnic Music project"
-                      />
-                    </a>
-                  </div>
-                  <div class="content">
-                    <div class="category-info">
-                      <div class="category-list">
-                        <a href="portfolio.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
-                      </div>
-                    </div>
-                    <h4 class="title">
-                      <a href="portfolio-details.html">Ethnic Music App</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 mt--30"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-once="true"
-            >
-              <div class="rn-portfolio">
-                <div class="inner">
-                  <div class="thumbnail">
-                    <a href="portfolio-details.html">
-                      <img
-                        src="assets/images/portfolio/portfolio-06.jpg"
-                        alt="E-Courier project"
-                      />
-                    </a>
-                  </div>
-                  <div class="content">
-                    <div class="category-info">
-                      <div class="category-list">
-                        <a href="portfolio.html">React Native</a>
-                      </div>
-                      <div class="meta">
-                        <span>Android and iOS</span>
-                      </div>
-                    </div>
-                    <h4 class="title">
-                      <a href="portfolio-details.html">E-Courier</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="row row--25 mt--10" id="relatedProjectsRow">
+            <!-- Injected via JavaScript -->
           </div>
         </div>
       </div>
@@ -412,6 +444,7 @@
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/modernizer.min.js"></script>
     <script src="assets/js/feather.min.js"></script>
@@ -421,5 +454,133 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- Structured Case Study Database -->
+    <script src="assets/js/projects-data.js"></script>
+
+    <!-- Dynamic Case Study Rendering Engine -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof PORTFOLIO_PROJECTS_DATA === "undefined" || !PORTFOLIO_PROJECTS_DATA.length) {
+          console.error("PORTFOLIO_PROJECTS_DATA not found.");
+          return;
+        }
+
+        // 1. Get Project ID from Query String
+        const urlParams = new URLSearchParams(window.location.search);
+        let requestedId = urlParams.get("id");
+
+        // Find matching project or fallback to flagship
+        let project = PORTFOLIO_PROJECTS_DATA.find(p => p.id === requestedId);
+        if (!project) {
+          project = PORTFOLIO_PROJECTS_DATA[0]; // CashBox POS
+        }
+
+        // 2. Populate Header & Meta
+        document.title = project.title + " | Case Study | Khairul Islam";
+        const metaDesc = document.getElementById("pageMetaDesc");
+        if (metaDesc) {
+          metaDesc.setAttribute("content", project.tagline + " - Engineered by Khairul Islam.");
+        }
+
+        document.getElementById("heroSubtitle").textContent = "Case Study • " + project.category_label;
+        document.getElementById("heroTitle").textContent = project.title;
+        document.getElementById("heroTagline").textContent = project.tagline;
+
+        // Badge
+        const badgeContainer = document.getElementById("heroBadgeContainer");
+        if (project.badge && project.badge !== "None") {
+          const icon = project.badge_icon || "award";
+          badgeContainer.innerHTML = `<span class="portfolio-badge"><i data-feather="${icon}"></i> ${project.badge}</span>`;
+        } else {
+          badgeContainer.innerHTML = "";
+        }
+
+        // Image
+        const imgEl = document.getElementById("projectImage");
+        imgEl.src = project.image;
+        imgEl.alt = project.title + " preview";
+
+        // Metrics (3 Cards)
+        const metricsRow = document.getElementById("metricsRow");
+        if (project.metrics && project.metrics.length) {
+          metricsRow.innerHTML = project.metrics.map(m => `
+            <div class="col-lg-4 col-md-6 col-sm-12 mt--20">
+              <div class="portfolio-project-stat">
+                <h4>${m.stat}</h4>
+                <p>${m.label}</p>
+              </div>
+            </div>
+          `).join("");
+        } else {
+          metricsRow.innerHTML = "";
+        }
+
+        // Live Link Buttons
+        const liveBtn = document.getElementById("liveSiteBtn");
+        const bottomLiveBtn = document.getElementById("bottomLiveBtn");
+        liveBtn.href = project.url;
+        bottomLiveBtn.href = project.url;
+
+        // Overview, Challenge, Solution
+        document.getElementById("projectOverview").textContent = project.overview;
+        document.getElementById("projectChallenge").textContent = project.problem_challenge;
+        document.getElementById("projectSolution").textContent = project.solution;
+
+        // Features List
+        const featuresList = document.getElementById("featuresList");
+        if (project.features && project.features.length) {
+          featuresList.innerHTML = project.features.map(f => `
+            <li>
+              <i data-feather="check-circle"></i>
+              <span>${f}</span>
+            </li>
+          `).join("");
+        } else {
+          featuresList.innerHTML = "";
+        }
+
+        // Related Projects (3 Other Projects from Data)
+        const relatedRow = document.getElementById("relatedProjectsRow");
+        const otherProjects = PORTFOLIO_PROJECTS_DATA.filter(p => p.id !== project.id);
+        const relatedSelection = otherProjects.slice(0, 3);
+
+        relatedRow.innerHTML = relatedSelection.map(r => `
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 mt--30"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-once="true"
+          >
+            <div class="rn-portfolio related-project-card">
+              <div class="inner">
+                <div class="thumbnail">
+                  <a href="portfolio-details.html?id=${r.id}">
+                    <img src="${r.image}" alt="${r.title} preview" loading="lazy" />
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="category-info">
+                    <div class="category-list">
+                      <a href="portfolio-details.html?id=${r.id}">${r.category_label}</a>
+                    </div>
+                  </div>
+                  <h4 class="title">
+                    <a href="portfolio-details.html?id=${r.id}">
+                      ${r.title}
+                      <i class="feather-arrow-up-right"></i>
+                    </a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join("");
+
+        // Refresh Feather icons after DOM insertion
+        if (typeof feather !== "undefined") {
+          feather.replace();
+        }
+      });
+    </script>
   </body>
 </html>
