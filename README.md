@@ -10,7 +10,7 @@
   <img alt="Khairul Islam Emon — Senior Software Engineer" src="portrait_dark.svg" width="100%">
 </picture>
 
-<br/><br/>
+<br/>
 
 <a href="https://www.linkedin.com/in/khairul-islam-emon" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -27,7 +27,7 @@
 <a href="https://www.facebook.com/emon143298" target="_blank">
   <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
 </a>
-<br/>
+<br/><br/>
 <picture>
   <img
     src="https://streak-stats.demolab.com/?user=emon1432&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180"
@@ -107,5 +107,4 @@
 
 ### `Architect scalable systems. Write clean code. Solve real-world problems.`
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:4f46e5,100:312e81&height=120&section=footer&animation=fadeIn" width="100%" />
 </div>
