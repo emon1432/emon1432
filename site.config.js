@@ -7,8 +7,9 @@
 module.exports = {
   siteTitle: "Khairul Islam (Emon) | Senior Software Engineer",
   siteDescription: "Senior Software Engineer specializing in Laravel, PHP, React, MySQL, REST APIs, Microservices, ERP, and High-Performance Web Applications in Dhaka, Bangladesh.",
-  siteUrl: "https://emonideas.com",
-  canonicalUrl: "https://emonideas.com",
+  // Active live domain (switch to "https://emonideas.com" and run `npm run build` once custom domain is connected)
+  siteUrl: "https://emonideas.vercel.app",
+  canonicalUrl: "https://emonideas.vercel.app",
   author: {
     name: "Khairul Islam (Emon)",
     fullName: "Khairul Islam",

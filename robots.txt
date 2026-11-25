@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://emonideas.com/sitemap.xml
+Sitemap: https://emonideas.vercel.app/sitemap.xml

@@ -712,12 +712,6 @@ function generateSitemapXml(projects) {
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>${siteConfig.siteUrl}/404.html</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
 `;
 
   for (const project of projects) {
@@ -956,7 +950,7 @@ function generate404Html() {
 
 // Main Build Runner
 function build() {
-  console.log('🚀 Starting static site generation for emonideas.com...');
+  console.log(`🚀 Starting static site generation for ${siteConfig.siteUrl}...`);
 
   const projects = loadProjectsData();
   console.log(`📦 Loaded ${projects.length} portfolio projects.`);
@@ -984,7 +978,7 @@ function build() {
   const sitemapXml = generateSitemapXml(projects);
   const sitemapPath = path.join(rootDir, 'sitemap.xml');
   fs.writeFileSync(sitemapPath, sitemapXml, 'utf8');
-  console.log(`✅ Generated dynamic sitemap.xml with ${projects.length + 3} URL entries.`);
+  console.log(`✅ Generated dynamic sitemap.xml with ${projects.length + 2} URL entries.`);
 
   // 3. Generate robots.txt
   const robotsTxt = generateRobotsTxt();

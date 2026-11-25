@@ -24,7 +24,7 @@ function runTests() {
   const configPath = path.join(rootDir, 'site.config.js');
   assert(fs.existsSync(configPath), 'site.config.js exists');
   const config = require(configPath);
-  assert(config.siteUrl === 'https://emonideas.com', 'site.config.js has canonical siteUrl');
+  assert(Boolean(config.siteUrl && config.siteUrl.startsWith('https://')), 'site.config.js has valid canonical siteUrl');
   assert(config.author && config.author.fullName === 'Khairul Islam', 'site.config.js has author Khairul Islam');
   assert(config.social && config.social.github && config.social.linkedin, 'site.config.js has required social links');
 
@@ -46,15 +46,15 @@ function runTests() {
   const robotsPath = path.join(rootDir, 'robots.txt');
   assert(fs.existsSync(robotsPath), 'robots.txt exists');
   const robots = fs.readFileSync(robotsPath, 'utf8');
-  assert(robots.includes('Sitemap: https://emonideas.com/sitemap.xml'), 'robots.txt points to canonical sitemap.xml');
+  assert(robots.includes(`Sitemap: ${config.siteUrl}/sitemap.xml`), 'robots.txt points to canonical sitemap.xml');
 
   // 5. Validate sitemap.xml
   const sitemapPath = path.join(rootDir, 'sitemap.xml');
   assert(fs.existsSync(sitemapPath), 'sitemap.xml exists');
   const sitemap = fs.readFileSync(sitemapPath, 'utf8');
-  assert(sitemap.includes('<loc>https://emonideas.com/</loc>'), 'sitemap includes root page');
-  assert(sitemap.includes('<loc>https://emonideas.com/portfolio.html</loc>'), 'sitemap includes portfolio.html');
-  assert(sitemap.includes('<loc>https://emonideas.com/404.html</loc>'), 'sitemap includes 404.html');
+  assert(sitemap.includes(`<loc>${config.siteUrl}/</loc>`), 'sitemap includes root page');
+  assert(sitemap.includes(`<loc>${config.siteUrl}/portfolio.html</loc>`), 'sitemap includes portfolio.html');
+  assert(!sitemap.includes('404.html'), 'sitemap excludes 404.html');
 
   // 6. Validate 404.html
   const notFoundPath = path.join(rootDir, '404.html');
@@ -96,8 +96,8 @@ function runTests() {
     // Title & Meta
     const expectedTitle = `<title>${escapeHtml(p.title)} | Case Study | ${config.author.fullName}</title>`;
     const hasTitle = html.includes(expectedTitle);
-    const hasCanonical = html.includes(`<link rel="canonical" href="https://emonideas.com/projects/${p.id}/"`) || html.includes(`<link rel="canonical" href="https://emonideas.com/projects/${p.id}/">`);
-    const hasOg = html.includes(`property="og:url" content="https://emonideas.com/projects/${p.id}/"`);
+    const hasCanonical = html.includes(`<link rel="canonical" href="${config.siteUrl}/projects/${p.id}/"`) || html.includes(`<link rel="canonical" href="${config.siteUrl}/projects/${p.id}/">`);
+    const hasOg = html.includes(`property="og:url" content="${config.siteUrl}/projects/${p.id}/"`);
     const hasTwitter = html.includes('name="twitter:card" content="summary_large_image"');
     const hasSingleH1 = (html.match(/<h1[^>]*>/g) || []).length === 1;
     const hasBreadcrumbs = html.includes('class="breadcrumb"');
